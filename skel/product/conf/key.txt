@@ -1,0 +1,2 @@
+#License File for VOLANO 2.5+. Save as plain text to "conf/key.txt".
+#Wed Oct 10 11:57:27 PDT 2012

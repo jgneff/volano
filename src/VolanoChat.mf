@@ -1,0 +1,6 @@
+Application-Name: VOLANO(TM) Chat Applet - VolanoChat
+Application-Library-Allowable-Codebase: DOCBASE
+Codebase: CODEBASE
+Permissions: all-permissions
+Trusted-Library: true
+Sealed: true

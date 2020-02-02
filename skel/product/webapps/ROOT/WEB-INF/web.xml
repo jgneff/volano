@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+    <servlet>
+        <servlet-name>config</servlet-name>
+        <servlet-class>COM.volano.ConfigServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>count</servlet-name>
+        <servlet-class>COM.volano.CountServlet</servlet-class>
+        <init-param>
+            <param-name>template</param-name>
+            <param-value>webapps/ROOT/WEB-INF/count.html</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>proxy</servlet-name>
+        <servlet-class>COM.volano.ProxyServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>COM.volano.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>config</servlet-name>
+        <url-pattern>/servlet/config</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>count</servlet-name>
+        <url-pattern>/servlet/count</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>proxy</servlet-name>
+        <url-pattern>/servlet/proxy</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/servlet/register</url-pattern>
+    </servlet-mapping>
+</web-app>

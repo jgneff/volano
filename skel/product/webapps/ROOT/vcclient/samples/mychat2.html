@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Mark's Personal Chat Room</title>
+<link type="text/css" rel="stylesheet" href="../index.css" />
+</head>
+<body>
+
+<h2>Mark's Personal Chat Room</h2>
+<p>[<a href="../index.html">Home</a> | <a href="http://www.volano.com/documentation.html">Administrator Guide</a>]</p>
+
+<h3>Hidden Personal Room</h3>
+<p>This is the MyVolanoChat applet. It opens directly into a personal
+room which is associated with only this Web page and is hidden from view
+in the public VOLANO chat server.</p>
+
+<applet codebase=".." archive="COM/volano/MyVolanoChat.jar" code="COM.volano.MyVolanoChat.class" width="500" height="100">
+<param name="color" value="#ffffff" />
+<param name="group" value="Mark's Personal Chat Room" />
+<param name="text" value="english.txt" />
+<param name="color.background" value="#C0FF00" />
+<param name="color.foreground" value="#004000" />
+<param name="font.default" value="Courier-13" />
+<param name="banner.param.background" value="#C0FF00" />
+<param name="banner.param.foreground" value="#004000" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<h3>Public Personal Room</h3>
+<p>This is also the MyVolanoChat applet. It opens directly into a
+personal room but is also added to the list of public rooms available in
+the VOLANO chat server.</p>
+
+<applet codebase=".." archive="COM/volano/MyVolanoChat.jar" code="COM.volano.MyVolanoChat.class" width="500" height="100">
+<param name="public" value="true" />
+<param name="color" value="#ffffff" />
+<param name="group" value="Mark's Personal Chat Room" />
+<param name="text" value="english.txt" />
+<param name="color.background" value="#C0FF00" />
+<param name="color.foreground" value="#004000" />
+<param name="font.default" value="Courier-13" />
+<param name="banner.param.background" value="#C0FF00" />
+<param name="banner.param.foreground" value="#004000" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<p>The applet tag for this applet is the same as the first one except
+for the following additional parameter:</p>
+<pre>
+&lt;param name="public" value="true" /&gt;
+</pre>
+
+<hr />
+<span class="footer">
+Copyright &copy; 1996-2014 Status Six Communications.
+VOLANO is a registered trademark of Status Six Communications.
+</span>
+</body>
+</html>

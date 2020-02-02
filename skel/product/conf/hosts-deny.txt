@@ -1,0 +1,2 @@
+# List of numeric IP addresses denied access to the VOLANO chat server.
+# The default is empty (no addresses are denied access).

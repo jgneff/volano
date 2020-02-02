@@ -1,0 +1,5 @@
+Application-Name: VOLANO(TM) Chat Applet - Agent
+Application-Library-Allowable-Codebase: DOCBASE
+Codebase: CODEBASE
+Permissions: sandbox
+Sealed: true

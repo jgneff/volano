@@ -1,0 +1,351 @@
+#VolanoChat Applet Properties - do not move or modify this line.
+
+override.myvolanochat=true
+server.port=8000
+limit.public=5
+limit.private=5
+history.enable=false
+filter.enable=false
+send.private.disable=false
+textarea.swing.force=false
+
+member.document=
+member.editable.name=true
+member.editable.profile=true
+member.monitor=false
+
+label.text=
+label.link=
+label.url=
+label.url.text=
+label.url.link=
+
+banner.code=COM.volano.BannerPlayer.class
+banner.parameters=BannerPlayer.txt
+banner.width=468
+banner.height=60
+
+logo.code=COM.volano.BannerPlayer.class
+logo.parameters=LogoPlayer.txt
+logo.width=100
+logo.height=220
+
+color.background=#A0B8C8
+color.background.button=#FFFFCC
+color.background.list=#DCDCDC
+color.background.text=#DCDCDC
+color.background.text.editable=#FFFFFF
+
+color.foreground=#000000
+color.foreground.button=#000000
+color.foreground.list=#000000
+color.foreground.text=#000000
+color.foreground.text.editable=#000000
+color.foreground.text.editable.inactive=#FF0000
+color.foreground.text.link=#0000FF
+
+font.default=SansSerif-13
+
+accept.private.default=true
+alert.entrance.default=false
+alert.audio.default=false
+alert.count.default=false
+webtouring.default=false
+
+link.prefix=http:// ftp:// news: mailto:
+link.profile.disable=false
+link.profile.url=%0
+link.referrer.disable=false
+link.referrer.url=%0
+
+image.button.border=true
+image.button1=button1.gif
+image.button2=button2.gif
+image.button.width=88
+image.button.height=31
+image.logo=italian.gif
+image.logo.width=100
+image.logo.height=200
+image.logo.background=#FFFFFF
+
+length.chattext=200
+length.profile=200
+length.roomname=100
+length.username=20
+
+delay.keystroke=0
+delay.access=0
+delay.authenticate=0
+delay.beep=1000
+delay.chat=1000
+delay.enter.private=1000
+delay.enter.room=1000
+delay.exit.private=0
+delay.exit.room=0
+delay.kick=0
+delay.ping=0
+delay.room.list=0
+delay.user.list=0
+
+unconfirmed.chat=1
+
+page.newwindow=false
+page.use.document.base=false
+page.access.document=document.html
+page.access.host=host.html
+page.access.password=password.html
+page.access.unable=unable.html
+page.access.version=version.html
+page.access.duplicate=duplicate.html
+page.java.version=java.html
+page.help=help.html
+page.about=about.html
+page.exit=
+page.exit.error=
+
+sound.start=
+sound.stop=
+sound.enter=
+sound.exit=
+sound.rooms=
+sound.users=
+sound.profile=
+sound.alert=drip.au
+
+key.ignore.alt=
+key.ignore.ctrl=V
+key.ignore.meta=V
+key.ignore.shift=\u009b
+
+char.replace.nonprintable=false
+char.replace.old=\u000a\u000d\u00a0
+char.replace.new=\u0020\u0020\u0020
+
+text.f1=
+text.f2=
+text.f3=
+text.f4=
+text.f5=
+text.f6=
+text.f7=
+text.f8=
+text.f9=
+text.f10=
+text.f11=
+text.f12=
+
+text.button.status=Start VolanoChat
+text.button.message=Clicca il pulsante per iniziare
+text.button.connecting=Connettendo con %0 sulla porta %1...
+text.button.accessing=Richiesta d'accesso...
+text.button.authenticating=Accesso approvato, autenticazione del client...
+text.button.notconnected=Impossibile connettersi con %0 sulla porta %1.
+text.button.admin=Password per l'Amministratore:
+text.button.monitor=Password per il Sorvegliante:
+
+text.member.name=Nome dell'iscritto:
+text.member.password=Password dell'iscritto:
+text.member.profile=[Profilo dell'iscritto]
+
+text.main.title=VolanoChat Applet
+text.main.logo=
+text.main.rooms=Stanze:
+text.main.norooms=Stanze:
+text.main.oneroom=1 stanza:
+text.main.manyrooms=%0 stanze:
+text.main.users=Persone:
+text.main.nousers=Persone:
+text.main.oneuser=1 persona:
+text.main.manyusers=%0 persone:
+text.main.onstage=Di scena:
+text.main.filter=Filtro stanza:
+text.main.username=Il tuo nome:
+text.main.profile=Il tuo profilo:
+text.main.broadcast=Trasmetti:
+text.main.getrooms=Elenca le stanze
+text.main.enter=Entra nella stanza
+text.main.connect=Connetti
+text.main.disconnect=Disconnetti
+
+text.chat.status=Scegli un nome per vederne il profilo. Clicca due volte il nome per la Chat Privata.
+text.chat.event.status=Scrivi la tua domanda e premi Invio.
+text.chat.event.sent=La tua domanda è stata inviata al moderatore.
+
+text.menu.places=Luoghi
+text.menu.getrooms=Elenca le stanze
+text.menu.enter=Entra nella stanza
+text.menu.exit=Esci
+text.menu.options=Opzioni
+text.menu.font.name=Caratteri
+text.menu.font.style=Stile
+text.menu.font.regular=Regolare
+text.menu.font.italic=Corsivo
+text.menu.font.bold=Grassetto
+text.menu.font.bolditalic=Grassetto Corsivo
+text.menu.font.increase=Aumenta i Caratteri
+text.menu.font.decrease=Diminuisci i Caratteri
+text.menu.accept.private=Accetta le richieste di Chat Private
+text.menu.alert.entrance=Avviso di entrata
+text.menu.alert.audio=Avviso sonoro
+text.menu.alert.count=Visualizza il conteggio
+text.menu.webtouring=Web Touring
+text.menu.help=Aiuto
+text.menu.topics=Aiuto Soggetti
+text.menu.about=VolanoChat Info
+
+text.menu.room=Stanze
+text.menu.close=Chiudi
+text.menu.people=Persone
+text.menu.people.ring=Chiama %0
+text.menu.people.ignore=Ignora %0
+text.menu.people.unignore=Accetta %0
+text.menu.people.count=Conta
+text.menu.monitor=Sorvegliante
+text.menu.monitor.remove=
+text.menu.monitor.kick=
+text.menu.monitor.ban=
+
+text.menu.links.title=Links
+text.menu.links.names=Browser Upgrades | Get Java
+text.menu.links.locations=http://www.webstandards.org/upgrade/ | http://java.sun.com/getjava/
+
+text.menu.themes.title=Schemi
+text.menu.themes.names=Prugna | Deserto | Marino | Zucca | Lime | - | Nero Contrasto | Nero Contrasto (largo) | Bianco Contrasto | Bianco Contrasto (largo)
+text.menu.themes.default=Standard
+
+# Plum
+theme.1.color.background=#CC99CC
+theme.1.color.background.button=#EEEEEE
+theme.1.color.background.list=#FFCCFF
+theme.1.color.background.text=#FFCCFF
+theme.1.color.foreground.text.editable.inactive=#996699
+theme.1.color.foreground.text.link=#330033
+
+# Desert
+theme.2.color.background=#CCCC99
+theme.2.color.background.button=#FFFFCC
+theme.2.color.background.list=#EDEDCA
+theme.2.color.background.text=#EDEDCA
+theme.2.color.foreground.text.editable.inactive=#999966
+theme.2.color.foreground.text.link=#333300
+
+# Marine
+theme.3.color.background=#6699CC
+theme.3.color.background.button=#EEEEEE
+theme.3.color.background.list=#B6CBEB
+theme.3.color.background.text=#B6CBEB
+theme.3.color.foreground.text.editable.inactive=#336699
+theme.3.color.foreground.text.link=#000033
+
+# Pumpkin
+theme.4.color.background=#FF9966
+theme.4.color.background.button=#FFFFCC
+theme.4.color.background.list=#FFCC99
+theme.4.color.background.text=#FFCC99
+theme.4.color.foreground.text.editable.inactive=#CC6633
+theme.4.color.foreground.text.link=#660000
+
+# Lime
+theme.5.color.background=#83D8A4
+theme.5.color.background.button=#C8ECD4
+theme.5.color.background.list=#C8ECD4
+theme.5.color.background.text=#C8ECD4
+theme.5.color.foreground.text.editable.inactive=#53A874
+theme.5.color.foreground.text.link=#004814
+
+# Skip theme.6 for separator "-".
+
+# High Contrast Black
+theme.7.color.background=#000000
+theme.7.color.background.button=#000000
+theme.7.color.background.list=#000000
+theme.7.color.background.text=#000000
+theme.7.color.background.text.editable=#000000
+theme.7.color.foreground=#FFFFFF
+theme.7.color.foreground.button=#FFFFFF
+theme.7.color.foreground.list=#FFFFFF
+theme.7.color.foreground.text=#FFFFFF
+theme.7.color.foreground.text.editable=#FFFFFF
+theme.7.color.foreground.text.editable.inactive=#808080
+theme.7.color.foreground.text.link=#8080FF
+
+# High Contrast Black (large)
+theme.8.color.background=#000000
+theme.8.color.background.button=#000000
+theme.8.color.background.list=#000000
+theme.8.color.background.text=#000000
+theme.8.color.background.text.editable=#000000
+theme.8.color.foreground=#FFFFFF
+theme.8.color.foreground.button=#FFFFFF
+theme.8.color.foreground.list=#FFFFFF
+theme.8.color.foreground.text=#FFFFFF
+theme.8.color.foreground.text.editable=#FFFFFF
+theme.8.color.foreground.text.editable.inactive=#808080
+theme.8.color.foreground.text.link=#8080FF
+theme.8.font.default=SansSerif-18
+
+# High Contrast White
+theme.9.color.background=#FFFFFF
+theme.9.color.background.button=#FFFFFF
+theme.9.color.background.list=#FFFFFF
+theme.9.color.background.text=#FFFFFF
+theme.9.color.foreground.text.editable.inactive=#808080
+
+# High Contrast White (large)
+theme.10.color.background=#FFFFFF
+theme.10.color.background.button=#FFFFFF
+theme.10.color.background.list=#FFFFFF
+theme.10.color.background.text=#FFFFFF
+theme.10.color.foreground.text.editable.inactive=#808080
+theme.10.font.default=SansSerif-18
+
+recent.user.limit=50
+text.monitor.title.remove=Remuovi dalla Stanza
+text.monitor.title.kick=Disconnetti dal Server
+text.monitor.title.ban=Blocca dal Server
+text.monitor.label.remove=Seleziona il nome da rimuovere:
+text.monitor.label.kick=Seleziona l'indirizzo da disconnettere:
+text.monitor.label.ban=Seleziona l'indirizzo da bloccare:
+text.monitor.okay=OK
+text.monitor.cancel=Cancella
+
+text.status.focus.rooms=Lista delle stanze in VolanoChat.
+text.status.focus.users=Lista delle persone nella stanza.
+text.status.focus.filter=Filtro dei nomi delle stanze.
+text.status.focus.username=Inserisci il tuo nome o alias.
+text.status.focus.profile=Inserisci informazioni personali come indirizzo Web o e-mail.
+text.status.focus.getrooms=Elenca i nomi delle stanze corrispondenti al filtro.
+text.status.focus.enter=Entra in una stanza.
+text.status.focus.membername=Il tuo nome d'iscrizione.
+text.status.focus.memberpassword=La tua password d'iscrizione.
+
+text.status.selectroom=Scegli una stanza per entrare.
+text.status.entername=Inserisci il tuo nome o alias per entrare %0.
+text.status.enterpassword=Inserisci la password per controllare la stanza.
+text.status.entermembername=Inserisci il tuo nome d'iscrizione.
+text.status.entermemberpassword=Inserisci la tua password d'iscrizione.
+text.status.enterprofile=Inserisci un profilo facoltativo.
+text.status.enter=Premi Entra nella stanza per entrare %0.
+text.status.enteringroom=Entrando in %0...
+text.status.enteringprivate=Attivando la Chat Privata con %0...
+text.status.gettingrooms=Ottenendo la lista delle stanze...
+text.status.gettingusers=Ottenendo la lista delle persone...
+text.status.gettingprofile=Ottenendo il profilo di %0...
+text.status.nosuchroom=La stanza non esiste più. Premi Elenca le stanze.
+text.status.nosuchuser=L'utente non fa più parte della stanza.
+text.status.nametaken=Il nome "%0" è già in uso in %1.
+text.status.membertaken=Il nome %0 appartiene ad un altro iscritto. Sei pregato di scegliere un altro nome.
+text.status.alreadyinroom=Già parte di %0.
+text.status.roomfull=%0 è pieno. Scegli un'altra stanza o riprova più tardi.
+text.status.roomcount=Conteggio stanza = %0.
+text.status.publiclimit=Sei limitato a %0 stanze chat.
+text.status.privatelimit=Sei limitato a %0 chat private.
+text.status.noprofile=%1 %0 non ha un profilo.
+text.status.profile=%1 %0: %2
+text.status.closing=Chiudendo VolanoChat...
+
+text.system.entrance=[%0] %2 %1: %3
+text.system.audio=[%0] Avviso sonoro da parte di %1.
+text.system.broadcast=[%0] %1
+text.system.partnerleft=[%0] %1 ha lasciato la chat privata.
+text.system.disconnected=[%0] Disconnesso. Chiudere VolanoChat e ricollegarsi.

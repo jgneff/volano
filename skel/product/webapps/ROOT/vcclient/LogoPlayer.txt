@@ -1,0 +1,17 @@
+#BannerPlayer Applet Properties - do not move or modify this line.
+
+background=#FFFFFF
+foreground=#000000
+banner.width=100
+banner.height=200
+banner.cache=true
+banner.ismap=false
+banner.char=$
+banner.1=30 logo.gif       http://www.volano.com/
+banner.2=30 english.gif    null
+banner.3=30 french.gif     null
+banner.4=30 german.gif     null
+banner.5=30 italian.gif    null
+banner.6=30 portuguese.gif null
+banner.7=30 spanish.gif    null
+banner.8=0  logo.gif       http://www.volano.com/

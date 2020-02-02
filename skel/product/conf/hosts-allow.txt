@@ -1,0 +1,3 @@
+# List of numeric IP addresses allowed access to the VOLANO chat server.
+# The default of 0.0.0.0 allows all IP addresses to connect.
+0.0.0.0

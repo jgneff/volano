@@ -1,0 +1,18 @@
+#BannerPlayer Applet Properties - do not move or modify this line.
+
+background=#FFFFFF
+foreground=#000000
+banner.width=468
+banner.height=60
+banner.cache=true
+banner.ismap=false
+banner.char=$
+banner.1=30 welcome.gif    http://www.volano.com/
+banner.2=30 help.gif       help.html
+banner.3=30 chatwithme.gif http://www.volano.com/
+# bar.width=468
+# bar.height=16
+# bar.cache=true
+# bar.ismap=false
+# bar.char=$
+# bar.image=0 bar.gif about.html

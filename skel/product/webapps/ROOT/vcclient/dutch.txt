@@ -1,0 +1,351 @@
+#VolanoChat Applet Properties - do not move or modify this line.
+
+override.myvolanochat=true
+server.port=8000
+limit.public=5
+limit.private=5
+history.enable=false
+filter.enable=false
+send.private.disable=false
+textarea.swing.force=false
+
+member.document=
+member.editable.name=true
+member.editable.profile=true
+member.monitor=false
+
+label.text=
+label.link=
+label.url=
+label.url.text=
+label.url.link=
+
+banner.code=COM.volano.BannerPlayer.class
+banner.parameters=BannerPlayer.txt
+banner.width=468
+banner.height=60
+
+logo.code=COM.volano.BannerPlayer.class
+logo.parameters=LogoPlayer.txt
+logo.width=100
+logo.height=220
+
+color.background=#A0B8C8
+color.background.button=#FFFFCC
+color.background.list=#DCDCDC
+color.background.text=#DCDCDC
+color.background.text.editable=#FFFFFF
+
+color.foreground=#000000
+color.foreground.button=#000000
+color.foreground.list=#000000
+color.foreground.text=#000000
+color.foreground.text.editable=#000000
+color.foreground.text.editable.inactive=#FF0000
+color.foreground.text.link=#0000FF
+
+font.default=SansSerif-13
+
+accept.private.default=true
+alert.entrance.default=false
+alert.audio.default=false
+alert.count.default=false
+webtouring.default=false
+
+link.prefix=http:// ftp:// news: mailto:
+link.profile.disable=false
+link.profile.url=%0
+link.referrer.disable=false
+link.referrer.url=%0
+
+image.button.border=true
+image.button1=button1.gif
+image.button2=button2.gif
+image.button.width=88
+image.button.height=31
+image.logo=logo.gif
+image.logo.width=100
+image.logo.height=200
+image.logo.background=#FFFFFF
+
+length.chattext=200
+length.profile=200
+length.roomname=100
+length.username=20
+
+delay.keystroke=0
+delay.access=0
+delay.authenticate=0
+delay.beep=1000
+delay.chat=1000
+delay.enter.private=1000
+delay.enter.room=1000
+delay.exit.private=0
+delay.exit.room=0
+delay.kick=0
+delay.ping=0
+delay.room.list=0
+delay.user.list=0
+
+unconfirmed.chat=1
+
+page.newwindow=false
+page.use.document.base=false
+page.access.document=document.html
+page.access.host=host.html
+page.access.password=password.html
+page.access.unable=unable.html
+page.access.version=version.html
+page.access.duplicate=duplicate.html
+page.java.version=java.html
+page.help=help.html
+page.about=about.html
+page.exit=
+page.exit.error=
+
+sound.start=
+sound.stop=
+sound.enter=
+sound.exit=
+sound.rooms=
+sound.users=
+sound.profile=
+sound.alert=drip.au
+
+key.ignore.alt=
+key.ignore.ctrl=V
+key.ignore.meta=V
+key.ignore.shift=\u009b
+
+char.replace.nonprintable=false
+char.replace.old=\u000a\u000d\u00a0
+char.replace.new=\u0020\u0020\u0020
+
+text.f1=
+text.f2=
+text.f3=
+text.f4=
+text.f5=
+text.f6=
+text.f7=
+text.f8=
+text.f9=
+text.f10=
+text.f11=
+text.f12=
+
+text.button.status=Start VolanoChat
+text.button.message=Klik op bovenstaande knop om te beginnen.
+text.button.connecting=Verbinding maken met host %0...
+text.button.accessing=Verbinding gemaakt met host, toegang aangevraagd...
+text.button.authenticating=Toegang verleend, autoriseren van cliënt...
+text.button.notconnected=Kan geen verbinding maken met host %0 op port %1.
+text.button.admin=Administrator wachtwoord:
+text.button.monitor=Monitor wachtwoord:
+
+text.member.name=Gebruikersnaam:
+text.member.password=Gebruikerswachtwoord:
+text.member.profile=[Gebruikersprofiel]
+
+text.main.title=VolanoChat Applet
+text.main.logo=
+text.main.rooms=Kamers:
+text.main.norooms=Kamers:
+text.main.oneroom=1 kamer:
+text.main.manyrooms=%0 kamers:
+text.main.users=Deelnemers:
+text.main.nousers=Deelnemers:
+text.main.oneuser=1 deelnemer:
+text.main.manyusers=%0 deelnemers:
+text.main.onstage=Op 't podium:
+text.main.filter=Zoek in kamerlijst:
+text.main.username=Uw (schuil-)naam:
+text.main.profile=Uw profiel:
+text.main.broadcast=Uitzenden:
+text.main.getrooms=Lijst Kamers
+text.main.enter=Ga Kamer Binnen
+text.main.connect=Verbinding maken
+text.main.disconnect=Verbinding verbreken
+
+text.chat.status=Selecteer een naam om het profiel te zien. Dubbelklik een naam om deze voor een privéchat uit te nodigen.
+text.chat.event.status=Tik uw vraag en toets Enter om te versturen.
+text.chat.event.sent=Uw vraag is naar de moderator gestuurd.
+
+text.menu.places=Plaatsen
+text.menu.getrooms=Lijst Kamers
+text.menu.enter=Ga kamer binnen
+text.menu.exit=Afsluiten
+text.menu.options=Opties
+text.menu.font.name=Lettertype
+text.menu.font.style=Tekenstijl
+text.menu.font.regular=Normaal
+text.menu.font.italic=Cursief
+text.menu.font.bold=Vet
+text.menu.font.bolditalic=Vet Cursief
+text.menu.font.increase=Vergroot Lettertype
+text.menu.font.decrease=Verklein Lettertype
+text.menu.accept.private=Privéchats aannemen
+text.menu.alert.entrance=Alert bij binnenkomst
+text.menu.alert.audio=Alertgeluid
+text.menu.alert.count=Ververs teller weergave
+text.menu.webtouring=Rondleiding Web
+text.menu.help=Help
+text.menu.topics=Helponderwerpen
+text.menu.about=Info over VolanoChat
+
+text.menu.room=Kamer
+text.menu.close=Sluiten
+text.menu.people=Deelnemers
+text.menu.people.ring=Aanbellen bij %0
+text.menu.people.ignore=Negeer %0
+text.menu.people.unignore=Negeer ongedaan %0
+text.menu.people.count=Aantal
+text.menu.monitor=Monitor
+text.menu.monitor.remove=
+text.menu.monitor.kick=
+text.menu.monitor.ban=
+
+text.menu.links.title=Links
+text.menu.links.names=Upgrade Browser | Download Java
+text.menu.links.locations=http://www.webstandards.org/upgrade/ | http://java.sun.com/getjava/
+
+text.menu.themes.title=Thema's
+text.menu.themes.names=Purper | Woestijn | Marineblauw | Pompoen | Limoen | - | Hoog Contrast Zwart | Hoog Contrast Zwart (groot) | Hoog Contrast Wit | Hoog Contrast Wit (groot)
+text.menu.themes.default=Standaard
+
+# Plum
+theme.1.color.background=#CC99CC
+theme.1.color.background.button=#EEEEEE
+theme.1.color.background.list=#FFCCFF
+theme.1.color.background.text=#FFCCFF
+theme.1.color.foreground.text.editable.inactive=#996699
+theme.1.color.foreground.text.link=#330033
+
+# Desert
+theme.2.color.background=#CCCC99
+theme.2.color.background.button=#FFFFCC
+theme.2.color.background.list=#EDEDCA
+theme.2.color.background.text=#EDEDCA
+theme.2.color.foreground.text.editable.inactive=#999966
+theme.2.color.foreground.text.link=#333300
+
+# Marine
+theme.3.color.background=#6699CC
+theme.3.color.background.button=#EEEEEE
+theme.3.color.background.list=#B6CBEB
+theme.3.color.background.text=#B6CBEB
+theme.3.color.foreground.text.editable.inactive=#336699
+theme.3.color.foreground.text.link=#000033
+
+# Pumpkin
+theme.4.color.background=#FF9966
+theme.4.color.background.button=#FFFFCC
+theme.4.color.background.list=#FFCC99
+theme.4.color.background.text=#FFCC99
+theme.4.color.foreground.text.editable.inactive=#CC6633
+theme.4.color.foreground.text.link=#660000
+
+# Lime
+theme.5.color.background=#83D8A4
+theme.5.color.background.button=#C8ECD4
+theme.5.color.background.list=#C8ECD4
+theme.5.color.background.text=#C8ECD4
+theme.5.color.foreground.text.editable.inactive=#53A874
+theme.5.color.foreground.text.link=#004814
+
+# Skip theme.6 for separator "-".
+
+# High Contrast Black
+theme.7.color.background=#000000
+theme.7.color.background.button=#000000
+theme.7.color.background.list=#000000
+theme.7.color.background.text=#000000
+theme.7.color.background.text.editable=#000000
+theme.7.color.foreground=#FFFFFF
+theme.7.color.foreground.button=#FFFFFF
+theme.7.color.foreground.list=#FFFFFF
+theme.7.color.foreground.text=#FFFFFF
+theme.7.color.foreground.text.editable=#FFFFFF
+theme.7.color.foreground.text.editable.inactive=#808080
+theme.7.color.foreground.text.link=#8080FF
+
+# High Contrast Black (large)
+theme.8.color.background=#000000
+theme.8.color.background.button=#000000
+theme.8.color.background.list=#000000
+theme.8.color.background.text=#000000
+theme.8.color.background.text.editable=#000000
+theme.8.color.foreground=#FFFFFF
+theme.8.color.foreground.button=#FFFFFF
+theme.8.color.foreground.list=#FFFFFF
+theme.8.color.foreground.text=#FFFFFF
+theme.8.color.foreground.text.editable=#FFFFFF
+theme.8.color.foreground.text.editable.inactive=#808080
+theme.8.color.foreground.text.link=#8080FF
+theme.8.font.default=SansSerif-18
+
+# High Contrast White
+theme.9.color.background=#FFFFFF
+theme.9.color.background.button=#FFFFFF
+theme.9.color.background.list=#FFFFFF
+theme.9.color.background.text=#FFFFFF
+theme.9.color.foreground.text.editable.inactive=#808080
+
+# High Contrast White (large)
+theme.10.color.background=#FFFFFF
+theme.10.color.background.button=#FFFFFF
+theme.10.color.background.list=#FFFFFF
+theme.10.color.background.text=#FFFFFF
+theme.10.color.foreground.text.editable.inactive=#808080
+theme.10.font.default=SansSerif-18
+
+recent.user.limit=50
+text.monitor.title.remove=Verwijder van Kamer
+text.monitor.title.kick=Kick v/d Server
+text.monitor.title.ban=Verban v/d Server
+text.monitor.label.remove=Selecteer Naam om te verwijderen:
+text.monitor.label.kick=Selecteer adres te verbreken:
+text.monitor.label.ban=Selecteer adres te verbannen:
+text.monitor.okay=OK
+text.monitor.cancel=Annuleren
+
+text.status.focus.rooms=Lijst van kamers.
+text.status.focus.users=Lijst deelnemers in kamer.
+text.status.focus.filter=Filter voor de lijst van de kamers.
+text.status.focus.username=Uw naam of schuilnaam.
+text.status.focus.profile=Persoonlijke informatie, b.v. Web- of e-mail adres.(niet verplicht)
+text.status.focus.getrooms=Lijst die overeenkomt met de filter.
+text.status.focus.enter=Ga een kamer binnen.
+text.status.focus.membername=Uw gebruikersnaam.
+text.status.focus.memberpassword=Uw gebruikerswachtwoord.
+
+text.status.selectroom=Selecteer een kamer om binnen te gaan.
+text.status.entername=Voer een naam in om deel te nemen in kamer %0.
+text.status.enterpassword=Voer uw Wachtwoord in.
+text.status.entermembername=Voer uw gebruikersnaam in.
+text.status.entermemberpassword=Voer uw gebruikerswachtwoord in.
+text.status.enterprofile=Een profiel naar keuze invoeren.
+text.status.enter=Druk op: Ga Kamer Binnen om %0 binnen te gaan.
+text.status.enteringroom=Binnenkomst %0...
+text.status.enteringprivate=Start privéchat met %0...
+text.status.gettingrooms=Lijst Kamers ophalen...
+text.status.gettingusers=Lijst Deelnemers in Kamer ophalen...
+text.status.gettingprofile=Ophalen profiel %0...
+text.status.nosuchroom=Deze kamer bestaat niet meer. Druk op: Lijst Kamers.
+text.status.nosuchuser=De deelnemer heeft de kamer verlaten.
+text.status.nametaken=De naam %0 is al in gebruik in %1.
+text.status.membertaken=De naam %0 is reeds aan een gebruikerslid toegekend. Kies een andere naam.
+text.status.alreadyinroom=Is reeds in %0.
+text.status.roomfull=%0 is vol. Selecteer een andere kamer of probeer later nog eens.
+text.status.roomcount=Aantal deelnemers = %0.
+text.status.publiclimit=U bent beperkt tot %0 chatkamers.
+text.status.privatelimit=U bent beperkt tot %0 privé chatsessies.
+text.status.noprofile=%1 %0 heeft geen profiel.
+text.status.profile=%1 %0: %2
+text.status.closing=Sluiting van VolanoChat...
+
+text.system.entrance=[%0] %2 %1: %3
+text.system.audio=[%0] Alertgeluid van %1.
+text.system.broadcast=[%0] %1
+text.system.partnerleft=[%0] %1 heeft de privéchat verlaten.
+text.system.disconnected=[%0] Verbinding is verbroken. Sluit het chatprogramma en herstart VolanoChat.

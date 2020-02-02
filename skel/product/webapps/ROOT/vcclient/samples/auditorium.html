@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Moderated Events</title>
+<link type="text/css" rel="stylesheet" href="../index.css" />
+</head>
+<body>
+
+<h2>Moderated Events</h2>
+<p>[<a href="../index.html">Home</a> | <a href="http://www.volano.com/documentation.html">Administrator Guide</a>]</p>
+
+<p><b>Note:</b> These examples work only with a VOLANO Chat Pro
+Server.</p>
+
+<p>An auditorium allows you to have large events with moderators,
+guests, and an audience. The auditorium is divided between moderators
+and guests on stage and all others in the audience. Chat messages from
+audience members are sent only to moderators on stage who can then post
+selected questions or comments to the auditorium. Everyone in the
+auditorium sees chat messages sent from those on stage.</p>
+
+<h3>Stage entrance</h3>
+<p>Moderators and guests enter the auditorium through the stage
+entrance, denoted by applets with the <code>stage</code> parameter
+set to <code>true</code>. You can restrict the stage entrance to
+a particular part of your Web site by defining the VOLANO Chat Pro
+Server <code>entrance.stage</code> URL prefix property. Although both
+the stage entrance and a normal entrance are shown on this page for
+demonstration purposes, you will probably want to protect the stage
+entrance Web page with a password. The auditorium chat room is created
+dynamically when either a moderator or a guest enter on stage.</p>
+
+<h4>Moderator</h4>
+<p>A moderator is a VolanoChat applet administrator who enters on
+stage. You must first set the <code>admin.password</code> server
+property before you can access the server as an administrator. You must
+also authorize this Web page as a stage entrance by defining its URL
+(or the URL of a parent directory) with the <code>entrance.stage</code>
+server property.</p>
+
+<applet codebase=".." archive="COM/volano/VolanoChat.jar" code="COM.volano.VolanoChat.class" width="500" height="60">
+<param name="admin" value="true" />
+<param name="stage" value="true" />
+<param name="color" value="#ffffff" />
+<param name="group" value="Sample Moderated Event" />
+<param name="topic" value="Join us in a live interview at 6:00 PM!" />
+<param name="text" value="english.txt" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<p>The applet tag for this applet is the same as the normal VolanoChat
+applet except for the following additional parameters:</p>
+<pre>
+&lt;param name="admin" value="true" /&gt;
+&lt;param name="stage" value="true" /&gt;
+&lt;param name="group" value="Sample Moderated Event" /&gt;
+&lt;param name="topic" value="Join us in a live interview at 6:00 PM!" /&gt;
+</pre>
+
+<h4>Guest</h4>
+<p>A guest is a normal VolanoChat applet user who enters on
+stage. You must first authorize this Web page as a stage entrance
+by defining its URL (or the URL of a parent directory) with the
+<code>entrance.stage</code> server property.</p>
+
+<applet codebase=".." archive="COM/volano/VolanoChat.jar" code="COM.volano.VolanoChat.class" width="500" height="60">
+<param name="stage" value="true" />
+<param name="color" value="#ffffff" />
+<param name="group" value="Sample Moderated Event" />
+<param name="topic" value="Join us in a live interview at 6:00 PM!" />
+<param name="text" value="english.txt" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<p>The applet tag for this applet is the same as the normal VolanoChat
+applet except for the following additional parameters:</p>
+<pre>
+&lt;param name="stage" value="true" /&gt;
+&lt;param name="group" value="Sample Moderated Event" /&gt;
+&lt;param name="topic" value="Join us in a live interview at 6:00 PM!" /&gt;
+</pre>
+
+<h3>Audience entrance</h3>
+<p>All other users can enter the audience part of the auditorium for the
+moderated event.</p>
+
+<applet codebase=".." archive="COM/volano/VolanoChat.jar" code="COM.volano.VolanoChat.class" width="500" height="60">
+<param name="color" value="#ffffff" />
+<param name="group" value="Sample Dynamic Chat Room" />
+<param name="text" value="english.txt" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<hr />
+<span class="footer">
+Copyright &copy; 1996-2014 Status Six Communications.
+VOLANO is a registered trademark of Status Six Communications.
+</span>
+</body>
+</html>

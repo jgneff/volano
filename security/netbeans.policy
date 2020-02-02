@@ -1,0 +1,34 @@
+// Minimal Java security permissions required by the VOLANO applets
+
+// For running the NetBeans-compiled applets in NetBeans with "Run File".
+// The code base is relative to the "opt/volano" working directory.
+// Set this policy in NetBeans with the VM Options:
+//   -Djava.security.policy==../../security/netbeans.policy
+// Add the following option to debug the security permissions:
+//   -J-Djava.security.debug=access,failure
+
+grant codeBase "file:../../build/classes/" {
+    // For creating thread groups
+    permission java.lang.RuntimePermission "modifyThreadGroup";
+
+    // Permissions normally granted to all applets
+    permission java.util.PropertyPermission "java.vendor", "read";
+    permission java.util.PropertyPermission "java.vendor.url", "read";
+    permission java.util.PropertyPermission "java.version", "read";
+    permission java.util.PropertyPermission "java.class.version", "read";
+    permission java.util.PropertyPermission "os.name", "read";
+    permission java.util.PropertyPermission "os.version", "read";
+    permission java.util.PropertyPermission "os.arch", "read";
+
+    // For loading the alert sound audio clip over HTTP
+    permission java.net.SocketPermission "localhost:8080", "connect,resolve";
+
+    // For loading the button, logo, and banner images over HTTP
+    permission java.net.URLPermission "http://localhost:8080/vcclient/*", "*:*";
+
+    // For setting thread priorities
+    permission java.lang.RuntimePermission "modifyThread";
+
+    // For connecting to the chat server
+    permission java.net.SocketPermission "localhost:8000", "connect,resolve";
+};

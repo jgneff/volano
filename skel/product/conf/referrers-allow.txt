@@ -1,0 +1,6 @@
+# List of referring URLs allowed access to the VOLANO chat server.
+# You must escape the colon character in the URL by preceeding it with a
+# backslash character, as in the following example:
+#     http\://www.volano.net/chat.html
+# The default below allows all referring Web addresses to connect.
+http\:

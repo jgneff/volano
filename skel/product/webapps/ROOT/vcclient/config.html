@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Applet Configuration</title>
+<link type="text/css" rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<h2>Applet Configuration</h2>
+<p>[<a href="index.html">Home</a> | <a href="http://www.volano.com/documentation.html">Administrator Guide</a>]</p>
+
+<p>You can modify this page to allow the administrator of the VOLANO
+chat server to modify the applet properties from any Web browser. You
+must first allow write access to the applet property files and define
+an administrator password as follows:</p>
+
+<ol>
+<li>
+<p>Modify the Java security manager policy, defined in
+<code>conf/policy.txt</code>, to give the <em>ConfigServlet</em> write
+access to the applet property files. Otherwise, you will get the following
+error when trying to modify the applet settings:</p>
+<pre>
+java.security.AccessControlException: access denied
+  (java.io.FilePermission webapps/ROOT/vcclient/english.txt write)
+</pre>
+</li>
+<li>
+<p>Define an administrator password by setting the VOLANO chat server
+property <code>admin.password</code> in the server properties file,
+which is the file <code>conf/properties.txt</code> by default. You will
+be prompted for a name and password by the applet configuration servlet
+after you click a link below. When prompted, you can use any name,
+but the password must match the server's <code>admin.password</code>
+value.</p>
+</li>
+<li>
+<p>When adding administrator or monitor passwords to the server
+properties file, <code>conf/properties.txt</code>, make sure the
+file is not publicly accessible through your Web server and is not
+readable by others on your server system.</p>
+<p>Only the <code>vcclient</code> subdirectory should be accessible
+through your Web server when the VOLANO chat server is installed
+following the instructions in the Administrator Guide. You can
+prevent others on the system from reading the file by modifying its
+permissions. On UNIX systems such as Linux, Solaris, FreeBSD, and Mac
+OS X, you can set its permissions by running the <code>chmod</code>
+command below from the VOLANO chat server installation directory:</p>
+<pre>
+$ chmod 600 conf/properties.txt
+</pre>
+<p>After that command, the server properties file will have the
+UNIX file permissions shown below when installed under a username
+of <code>volano</code>. This allows only the user logged in as
+<code>volano</code>, or programs (such as the VOLANO chat server)
+running under the account, to read and modify the file:</p>
+<pre>
+$ ls -l conf/properties.txt
+-rw------- 1 volano volano 4560 2009-03-04 08:22 conf/properties.txt
+</pre>
+</li>
+</ol>
+
+<p>After restarting the VOLANO chat server with an administrator
+password, click a link below to modify the corresponding applet
+properties:</p>
+<ul>
+<li><a href="/servlet/config?template=template.html&amp;properties=dutch.txt" title="Dutch Applet Properties">dutch.txt</a></li>
+<li><a href="/servlet/config?template=template.html&amp;properties=english.txt" title="English Applet Properties">english.txt</a></li>
+<li><a href="/servlet/config?template=template.html&amp;properties=french.txt" title="French Applet Properties">french.txt</a></li>
+<li><a href="/servlet/config?template=template.html&amp;properties=german.txt" title="German Applet Properties">german.txt</a></li>
+<li><a href="/servlet/config?template=template.html&amp;properties=italian.txt" title="Italian Applet Properties">italian.txt</a></li>
+<li><a href="/servlet/config?template=template.html&amp;properties=monitor.txt" title="Monitor Applet Properties">monitor.txt</a></li>
+<li><a href="/servlet/config?template=template.html&amp;properties=portuguese.txt" title="Portuguese Applet Properties">portuguese.txt</a></li>
+<li><a href="/servlet/config?template=template.html&amp;properties=spanish.txt" title="Spanish Applet Properties">spanish.txt</a></li>
+</ul>
+
+<hr />
+<span class="footer">
+Copyright &copy; 1996-2014 Status Six Communications.
+VOLANO is a registered trademark of Status Six Communications.
+</span>
+</body>
+</html>

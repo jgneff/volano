@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>VolanoChat Applet Configuration</title>
+<link type="text/css" rel="stylesheet" href="/vcclient/index.css" />
+</head>
+<body>
+
+<h2>VolanoChat Applet Configuration</h2>
+<p>Please see the
+<a href="http://www.volano.com/documentation.html">VOLANO Chat Server Administrator Guide</a>
+for complete documentation on all applet properties.</p>
+
+<form method="post" action="/servlet/config">
+<table cellspacing="1" cellpadding="1" border="0">
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>General</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">override.myvolanochat:</font></td>
+<td valign="top"><input type="text" size="40" name="override.myvolanochat" value="<override.myvolanochat/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">server.port:</font></td>
+<td valign="top"><input type="text" size="40" name="server.port" value="<server.port/>" /></td>
+<td valign="top"><font size="-1">1025 - 65535</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">limit.public:</font></td>
+<td valign="top"><input type="text" size="40" name="limit.public" value="<limit.public/>" /></td>
+<td valign="top"><font size="-1">no limit=-1</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">limit.private:</font></td>
+<td valign="top"><input type="text" size="40" name="limit.private" value="<limit.private/>" /></td>
+<td valign="top"><font size="-1">no limit=-1</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">history.enable:</font></td>
+<td valign="top"><input type="text" size="40" name="history.enable" value="<history.enable/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">filter.enable:</font></td>
+<td valign="top"><input type="text" size="40" name="filter.enable" value="<filter.enable/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">send.private.disable:</font></td>
+<td valign="top"><input type="text" size="40" name="send.private.disable" value="<send.private.disable/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Membership</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">member.document:</font></td>
+<td valign="top"><input type="text" size="40" name="member.document" value="<member.document/>" /></td>
+<td valign="top"><font size="-1">for=%0, by=%1</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">member.editable.name:</font></td>
+<td valign="top"><input type="text" size="40" name="member.editable.name" value="<member.editable.name/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">member.editable.profile:</font></td>
+<td valign="top"><input type="text" size="40" name="member.editable.profile" value="<member.editable.profile/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">member.monitor:</font></td>
+<td valign="top"><input type="text" size="40" name="member.monitor" value="<member.monitor/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Advertising label</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">label.text:</font></td>
+<td valign="top"><input type="text" size="40" name="label.text" value="<label.text/>" /></td>
+<td valign="top"><font size="-1">text string</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">label.link:</font></td>
+<td valign="top"><input type="text" size="40" name="label.link" value="<label.link/>" /></td>
+<td valign="top"><font size="-1">URL</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Banner applet</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">banner.code:</font></td>
+<td valign="top"><input type="text" size="40" name="banner.code" value="<banner.code/>" /></td>
+<td valign="top"><font size="-1">applet class file or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">banner.parameters:</font></td>
+<td valign="top"><input type="text" size="40" name="banner.parameters" value="<banner.parameters/>" /></td>
+<td valign="top"><font size="-1">properties file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">banner.width:</font></td>
+<td valign="top"><input type="text" size="40" name="banner.width" value="<banner.width/>" /></td>
+<td valign="top"><font size="-1">pixels</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">banner.height:</font></td>
+<td valign="top"><input type="text" size="40" name="banner.height" value="<banner.height/>" /></td>
+<td valign="top"><font size="-1">pixels</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Logo applet</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">logo.code:</font></td>
+<td valign="top"><input type="text" size="40" name="logo.code" value="<logo.code/>" /></td>
+<td valign="top"><font size="-1">applet class file or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">logo.parameters:</font></td>
+<td valign="top"><input type="text" size="40" name="logo.parameters" value="<logo.parameters/>" /></td>
+<td valign="top"><font size="-1">properties file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">logo.width:</font></td>
+<td valign="top"><input type="text" size="40" name="logo.width" value="<logo.width/>" /></td>
+<td valign="top"><font size="-1">pixels</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">logo.height:</font></td>
+<td valign="top"><input type="text" size="40" name="logo.height" value="<logo.height/>" /></td>
+<td valign="top"><font size="-1">pixels</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Colors and fonts</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.background:</font></td>
+<td valign="top"><input type="text" size="40" name="color.background" value="<color.background/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.background.button:</font></td>
+<td valign="top"><input type="text" size="40" name="color.background.button" value="<color.background.button/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.background.list:</font></td>
+<td valign="top"><input type="text" size="40" name="color.background.list" value="<color.background.list/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.background.text:</font></td>
+<td valign="top"><input type="text" size="40" name="color.background.text" value="<color.background.text/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.background.text.editable:</font></td>
+<td valign="top"><input type="text" size="40" name="color.background.text.editable" value="<color.background.text.editable/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.foreground:</font></td>
+<td valign="top"><input type="text" size="40" name="color.foreground" value="<color.foreground/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.foreground.button:</font></td>
+<td valign="top"><input type="text" size="40" name="color.foreground.button" value="<color.foreground.button/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.foreground.list:</font></td>
+<td valign="top"><input type="text" size="40" name="color.foreground.list" value="<color.foreground.list/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.foreground.text:</font></td>
+<td valign="top"><input type="text" size="40" name="color.foreground.text" value="<color.foreground.text/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.foreground.text.editable:</font></td>
+<td valign="top"><input type="text" size="40" name="color.foreground.text.editable" value="<color.foreground.text.editable/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.foreground.text.editable.inactive:</font></td>
+<td valign="top"><input type="text" size="40" name="color.foreground.text.editable.inactive" value="<color.foreground.text.editable.inactive/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">color.foreground.text.link:</font></td>
+<td valign="top"><input type="text" size="40" name="color.foreground.text.link" value="<color.foreground.text.link/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">font.default:</font></td>
+<td valign="top"><input type="text" size="40" name="font.default" value="<font.default/>" /></td>
+<td valign="top"><font size="-1">name[-style][-size]</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Option defaults</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">accept.private.default:</font></td>
+<td valign="top"><input type="text" size="40" name="accept.private.default" value="<accept.private.default/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">alert.entrance.default:</font></td>
+<td valign="top"><input type="text" size="40" name="alert.entrance.default" value="<alert.entrance.default/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">alert.audio.default:</font></td>
+<td valign="top"><input type="text" size="40" name="alert.audio.default" value="<alert.audio.default/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">alert.count.default:</font></td>
+<td valign="top"><input type="text" size="40" name="alert.count.default" value="<alert.count.default/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">webtouring.default:</font></td>
+<td valign="top"><input type="text" size="40" name="webtouring.default" value="<webtouring.default/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Link settings</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">link.prefix:</font></td>
+<td valign="top"><input type="text" size="40" name="link.prefix" value="<link.prefix/>" /></td>
+<td valign="top"><font size="-1">URL prefixes</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">link.profile.disable:</font></td>
+<td valign="top"><input type="text" size="40" name="link.profile.disable" value="<link.profile.disable/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">link.profile.url:</font></td>
+<td valign="top"><input type="text" size="40" name="link.profile.url" value="<link.profile.url/>" /></td>
+<td valign="top"><font size="-1">URL template</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">link.referrer.disable:</font></td>
+<td valign="top"><input type="text" size="40" name="link.referrer.disable" value="<link.referrer.disable/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">link.referrer.url:</font></td>
+<td valign="top"><input type="text" size="40" name="link.referrer.url" value="<link.referrer.url/>" /></td>
+<td valign="top"><font size="-1">URL template</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Buttons and logos</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">image.button.border:</font></td>
+<td valign="top"><input type="text" size="40" name="image.button.border" value="<image.button.border/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">image.button1:</font></td>
+<td valign="top"><input type="text" size="40" name="image.button1" value="<image.button1/>" /></td>
+<td valign="top"><font size="-1">GIF or JPEG file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">image.button2:</font></td>
+<td valign="top"><input type="text" size="40" name="image.button2" value="<image.button2/>" /></td>
+<td valign="top"><font size="-1">GIF or JPEG file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">image.button.width:</font></td>
+<td valign="top"><input type="text" size="40" name="image.button.width" value="<image.button.width/>" /></td>
+<td valign="top"><font size="-1">pixels</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">image.button.height:</font></td>
+<td valign="top"><input type="text" size="40" name="image.button.height" value="<image.button.height/>" /></td>
+<td valign="top"><font size="-1">pixels</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">image.logo:</font></td>
+<td valign="top"><input type="text" size="40" name="image.logo" value="<image.logo/>" /></td>
+<td valign="top"><font size="-1">GIF or JPEG file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">image.logo.width:</font></td>
+<td valign="top"><input type="text" size="40" name="image.logo.width" value="<image.logo.width/>" /></td>
+<td valign="top"><font size="-1">pixels</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">image.logo.height:</font></td>
+<td valign="top"><input type="text" size="40" name="image.logo.height" value="<image.logo.height/>" /></td>
+<td valign="top"><font size="-1">pixels</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">image.logo.background:</font></td>
+<td valign="top"><input type="text" size="40" name="image.logo.background" value="<image.logo.background/>" /></td>
+<td valign="top"><font size="-1">#RRGGBB</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>String limits</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">length.chattext:</font></td>
+<td valign="top"><input type="text" size="40" name="length.chattext" value="<length.chattext/>" /></td>
+<td valign="top"><font size="-1">characters</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">length.profile:</font></td>
+<td valign="top"><input type="text" size="40" name="length.profile" value="<length.profile/>" /></td>
+<td valign="top"><font size="-1">characters</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">length.roomname:</font></td>
+<td valign="top"><input type="text" size="40" name="length.roomname" value="<length.roomname/>" /></td>
+<td valign="top"><font size="-1">characters</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">length.username:</font></td>
+<td valign="top"><input type="text" size="40" name="length.username" value="<length.username/>" /></td>
+<td valign="top"><font size="-1">characters</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Flow control</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.keystroke:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.keystroke" value="<delay.keystroke/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.access:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.access" value="<delay.access/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.authenticate:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.authenticate" value="<delay.authenticate/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.beep:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.beep" value="<delay.beep/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.chat:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.chat" value="<delay.chat/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.enter.private:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.enter.private" value="<delay.enter.private/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.enter.room:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.enter.room" value="<delay.enter.room/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.exit.private:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.exit.private" value="<delay.exit.private/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.exit.room:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.exit.room" value="<delay.exit.room/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.kick:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.kick" value="<delay.kick/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.ping:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.ping" value="<delay.ping/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.room.list:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.room.list" value="<delay.room.list/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">delay.user.list:</font></td>
+<td valign="top"><input type="text" size="40" name="delay.user.list" value="<delay.user.list/>" /></td>
+<td valign="top"><font size="-1">no delay=0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">unconfirmed.chat:</font></td>
+<td valign="top"><input type="text" size="40" name="unconfirmed.chat" value="<unconfirmed.chat/>" /></td>
+<td valign="top"><font size="-1">0 or more</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Web pages</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.newwindow:</font></td>
+<td valign="top"><input type="text" size="40" name="page.newwindow" value="<page.newwindow/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.use.document.base:</font></td>
+<td valign="top"><input type="text" size="40" name="page.use.document.base" value="<page.use.document.base/>" /></td>
+<td valign="top"><font size="-1">true or false</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.access.document:</font></td>
+<td valign="top"><input type="text" size="40" name="page.access.document" value="<page.access.document/>" /></td>
+<td valign="top"><font size="-1">HTML file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.access.host:</font></td>
+<td valign="top"><input type="text" size="40" name="page.access.host" value="<page.access.host/>" /></td>
+<td valign="top"><font size="-1">HTML file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.access.password:</font></td>
+<td valign="top"><input type="text" size="40" name="page.access.password" value="<page.access.password/>" /></td>
+<td valign="top"><font size="-1">HTML file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.access.unable:</font></td>
+<td valign="top"><input type="text" size="40" name="page.access.unable" value="<page.access.unable/>" /></td>
+<td valign="top"><font size="-1">HTML file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.access.version:</font></td>
+<td valign="top"><input type="text" size="40" name="page.access.version" value="<page.access.version/>" /></td>
+<td valign="top"><font size="-1">HTML file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.access.duplicate:</font></td>
+<td valign="top"><input type="text" size="40" name="page.access.duplicate" value="<page.access.duplicate/>" /></td>
+<td valign="top"><font size="-1">HTML file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.java.version:</font></td>
+<td valign="top"><input type="text" size="40" name="page.java.version" value="<page.java.version/>" /></td>
+<td valign="top"><font size="-1">HTML file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.help:</font></td>
+<td valign="top"><input type="text" size="40" name="page.help" value="<page.help/>" /></td>
+<td valign="top"><font size="-1">HTML file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.about:</font></td>
+<td valign="top"><input type="text" size="40" name="page.about" value="<page.about/>" /></td>
+<td valign="top"><font size="-1">HTML file</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.exit:</font></td>
+<td valign="top"><input type="text" size="40" name="page.exit" value="<page.exit/>" /></td>
+<td valign="top"><font size="-1">HTML file or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">page.exit.error:</font></td>
+<td valign="top"><input type="text" size="40" name="page.exit.error" value="<page.exit.error/>" /></td>
+<td valign="top"><font size="-1">HTML file or blank</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Sounds</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">sound.start:</font></td>
+<td valign="top"><input type="text" size="40" name="sound.start" value="<sound.start/>" /></td>
+<td valign="top"><font size="-1">AU file or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">sound.stop:</font></td>
+<td valign="top"><input type="text" size="40" name="sound.stop" value="<sound.stop/>" /></td>
+<td valign="top"><font size="-1">AU file or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">sound.enter:</font></td>
+<td valign="top"><input type="text" size="40" name="sound.enter" value="<sound.enter/>" /></td>
+<td valign="top"><font size="-1">AU file or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">sound.exit:</font></td>
+<td valign="top"><input type="text" size="40" name="sound.exit" value="<sound.exit/>" /></td>
+<td valign="top"><font size="-1">AU file or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">sound.rooms:</font></td>
+<td valign="top"><input type="text" size="40" name="sound.rooms" value="<sound.rooms/>" /></td>
+<td valign="top"><font size="-1">AU file or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">sound.users:</font></td>
+<td valign="top"><input type="text" size="40" name="sound.users" value="<sound.users/>" /></td>
+<td valign="top"><font size="-1">AU file or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">sound.profile:</font></td>
+<td valign="top"><input type="text" size="40" name="sound.profile" value="<sound.profile/>" /></td>
+<td valign="top"><font size="-1">AU file or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">sound.alert:</font></td>
+<td valign="top"><input type="text" size="40" name="sound.alert" value="<sound.alert/>" /></td>
+<td valign="top"><font size="-1">AU file</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Function keys</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f1:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f1" value="<text.f1/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f2:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f2" value="<text.f2/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f3:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f3" value="<text.f3/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f4:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f4" value="<text.f4/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f5:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f5" value="<text.f5/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f6:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f6" value="<text.f6/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f7:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f7" value="<text.f7/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f8:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f8" value="<text.f8/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f9:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f9" value="<text.f9/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f10:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f10" value="<text.f10/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f11:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f11" value="<text.f11/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.f12:</font></td>
+<td valign="top"><input type="text" size="40" name="text.f12" value="<text.f12/>" /></td>
+<td valign="top"><font size="-1">%0 - %9</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Web page text</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.button.status:</font></td>
+<td valign="top"><input type="text" size="40" name="text.button.status" value="<text.button.status/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.button.message:</font></td>
+<td valign="top"><input type="text" size="40" name="text.button.message" value="<text.button.message/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.button.connecting:</font></td>
+<td valign="top"><input type="text" size="40" name="text.button.connecting" value="<text.button.connecting/>" /></td>
+<td valign="top"><font size="-1">host=%0, port=%1</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.button.accessing:</font></td>
+<td valign="top"><input type="text" size="40" name="text.button.accessing" value="<text.button.accessing/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.button.authenticating:</font></td>
+<td valign="top"><input type="text" size="40" name="text.button.authenticating" value="<text.button.authenticating/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.button.notconnected:</font></td>
+<td valign="top"><input type="text" size="40" name="text.button.notconnected" value="<text.button.notconnected/>" /></td>
+<td valign="top"><font size="-1">host=%0, port=%1</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.button.admin:</font></td>
+<td valign="top"><input type="text" size="40" name="text.button.admin" value="<text.button.admin/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.button.monitor:</font></td>
+<td valign="top"><input type="text" size="40" name="text.button.monitor" value="<text.button.monitor/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Membership text</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.member.name:</font></td>
+<td valign="top"><input type="text" size="40" name="text.member.name" value="<text.member.name/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.member.password:</font></td>
+<td valign="top"><input type="text" size="40" name="text.member.password" value="<text.member.password/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.member.profile:</font></td>
+<td valign="top"><input type="text" size="40" name="text.member.profile" value="<text.member.profile/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Main window text</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.title:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.title" value="<text.main.title/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.logo:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.logo" value="<text.main.logo/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.rooms:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.rooms" value="<text.main.rooms/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.norooms:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.norooms" value="<text.main.norooms/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.oneroom:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.oneroom" value="<text.main.oneroom/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.manyrooms:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.manyrooms" value="<text.main.manyrooms/>" /></td>
+<td valign="top"><font size="-1">count=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.users:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.users" value="<text.main.users/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.nousers:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.nousers" value="<text.main.nousers/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.oneuser:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.oneuser" value="<text.main.oneuser/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.manyusers:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.manyusers" value="<text.main.manyusers/>" /></td>
+<td valign="top"><font size="-1">count=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.onstage:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.onstage" value="<text.main.onstage/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.filter:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.filter" value="<text.main.filter/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.username:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.username" value="<text.main.username/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.profile:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.profile" value="<text.main.profile/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.broadcast:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.broadcast" value="<text.main.broadcast/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.getrooms:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.getrooms" value="<text.main.getrooms/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.enter:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.enter" value="<text.main.enter/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.connect:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.connect" value="<text.main.connect/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.main.disconnect:</font></td>
+<td valign="top"><input type="text" size="40" name="text.main.disconnect" value="<text.main.disconnect/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Room window text</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.chat.status:</font></td>
+<td valign="top"><input type="text" size="40" name="text.chat.status" value="<text.chat.status/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.chat.event.status:</font></td>
+<td valign="top"><input type="text" size="40" name="text.chat.event.status" value="<text.chat.event.status/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.chat.event.sent:</font></td>
+<td valign="top"><input type="text" size="40" name="text.chat.event.sent" value="<text.chat.event.sent/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Menu text</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.places:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.places" value="<text.menu.places/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.getrooms:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.getrooms" value="<text.menu.getrooms/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.enter:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.enter" value="<text.menu.enter/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.exit:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.exit" value="<text.menu.exit/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.options:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.options" value="<text.menu.options/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.font.name:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.font.name" value="<text.menu.font.name/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.font.style:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.font.style" value="<text.menu.font.style/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.font.regular:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.font.regular" value="<text.menu.font.regular/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.font.italic:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.font.italic" value="<text.menu.font.italic/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.font.bold:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.font.bold" value="<text.menu.font.bold/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.font.bolditalic:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.font.bolditalic" value="<text.menu.font.bolditalic/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.font.increase:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.font.increase" value="<text.menu.font.increase/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.font.decrease:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.font.decrease" value="<text.menu.font.decrease/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.accept.private:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.accept.private" value="<text.menu.accept.private/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.alert.entrance:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.alert.entrance" value="<text.menu.alert.entrance/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.alert.audio:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.alert.audio" value="<text.menu.alert.audio/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.alert.count:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.alert.count" value="<text.menu.alert.count/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.webtouring:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.webtouring" value="<text.menu.webtouring/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.help:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.help" value="<text.menu.help/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.topics:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.topics" value="<text.menu.topics/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.about:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.about" value="<text.menu.about/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.room:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.room" value="<text.menu.room/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.close:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.close" value="<text.menu.close/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.people:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.people" value="<text.menu.people/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.people.ring:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.people.ring" value="<text.menu.people.ring/>" /></td>
+<td valign="top"><font size="-1">name=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.people.ignore:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.people.ignore" value="<text.menu.people.ignore/>" /></td>
+<td valign="top"><font size="-1">name=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.people.unignore:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.people.unignore" value="<text.menu.people.unignore/>" /></td>
+<td valign="top"><font size="-1">name=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.people.count:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.people.count" value="<text.menu.people.count/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.monitor:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.monitor" value="<text.menu.monitor/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.monitor.remove:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.monitor.remove" value="<text.menu.monitor.remove/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.monitor.kick:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.monitor.kick" value="<text.menu.monitor.kick/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.monitor.ban:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.monitor.ban" value="<text.menu.monitor.ban/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Menu links</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.links.title:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.links.title" value="<text.menu.links.title/>" /></td>
+<td valign="top"><font size="-1">menu title or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.links.names:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.links.names" value="<text.menu.links.names/>" /></td>
+<td valign="top"><font size="-1">name1 | name2 | ...</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.links.locations:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.links.locations" value="<text.menu.links.locations/>" /></td>
+<td valign="top"><font size="-1">URL1 | URL2 | ...</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Themes</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.themes.title:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.themes.title" value="<text.menu.themes.title/>" /></td>
+<td valign="top"><font size="-1">menu title or blank</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.themes.names:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.themes.names" value="<text.menu.themes.names/>" /></td>
+<td valign="top"><font size="-1">theme1 | theme2 | ...</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.menu.themes.default:</font></td>
+<td valign="top"><input type="text" size="40" name="text.menu.themes.default" value="<text.menu.themes.default/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Monitor dialog</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">recent.user.limit:</font></td>
+<td valign="top"><input type="text" size="40" name="recent.user.limit" value="<recent.user.limit/>" /></td>
+<td valign="top"><font size="-1">0 or more</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.monitor.title.remove:</font></td>
+<td valign="top"><input type="text" size="40" name="text.monitor.title.remove" value="<text.monitor.title.remove/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.monitor.title.kick:</font></td>
+<td valign="top"><input type="text" size="40" name="text.monitor.title.kick" value="<text.monitor.title.kick/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.monitor.title.ban:</font></td>
+<td valign="top"><input type="text" size="40" name="text.monitor.title.ban" value="<text.monitor.title.ban/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.monitor.label.remove:</font></td>
+<td valign="top"><input type="text" size="40" name="text.monitor.label.remove" value="<text.monitor.label.remove/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.monitor.label.kick:</font></td>
+<td valign="top"><input type="text" size="40" name="text.monitor.label.kick" value="<text.monitor.label.kick/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.monitor.label.ban:</font></td>
+<td valign="top"><input type="text" size="40" name="text.monitor.label.ban" value="<text.monitor.label.ban/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.monitor.okay:</font></td>
+<td valign="top"><input type="text" size="40" name="text.monitor.okay" value="<text.monitor.okay/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.monitor.cancel:</font></td>
+<td valign="top"><input type="text" size="40" name="text.monitor.cancel" value="<text.monitor.cancel/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Keyboard focus</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.focus.rooms:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.focus.rooms" value="<text.status.focus.rooms/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.focus.users:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.focus.users" value="<text.status.focus.users/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.focus.filter:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.focus.filter" value="<text.status.focus.filter/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.focus.username:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.focus.username" value="<text.status.focus.username/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.focus.profile:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.focus.profile" value="<text.status.focus.profile/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.focus.getrooms:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.focus.getrooms" value="<text.status.focus.getrooms/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.focus.enter:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.focus.enter" value="<text.status.focus.enter/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.focus.membername:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.focus.membername" value="<text.status.focus.membername/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.focus.memberpassword:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.focus.memberpassword" value="<text.status.focus.memberpassword/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Status messages</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.selectroom:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.selectroom" value="<text.status.selectroom/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.entername:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.entername" value="<text.status.entername/>" /></td>
+<td valign="top"><font size="-1">room=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.enterpassword:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.enterpassword" value="<text.status.enterpassword/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.entermembername:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.entermembername" value="<text.status.entermembername/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.entermemberpassword:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.entermemberpassword" value="<text.status.entermemberpassword/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.enterprofile:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.enterprofile" value="<text.status.enterprofile/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.enter:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.enter" value="<text.status.enter/>" /></td>
+<td valign="top"><font size="-1">room=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.enteringroom:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.enteringroom" value="<text.status.enteringroom/>" /></td>
+<td valign="top"><font size="-1">room=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.enteringprivate:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.enteringprivate" value="<text.status.enteringprivate/>" /></td>
+<td valign="top"><font size="-1">name=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.gettingrooms:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.gettingrooms" value="<text.status.gettingrooms/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.gettingusers:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.gettingusers" value="<text.status.gettingusers/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.gettingprofile:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.gettingprofile" value="<text.status.gettingprofile/>" /></td>
+<td valign="top"><font size="-1">name=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.nosuchroom:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.nosuchroom" value="<text.status.nosuchroom/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.nosuchuser:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.nosuchuser" value="<text.status.nosuchuser/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.nametaken:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.nametaken" value="<text.status.nametaken/>" /></td>
+<td valign="top"><font size="-1">name=%0, room=%1</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.membertaken:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.membertaken" value="<text.status.membertaken/>" /></td>
+<td valign="top"><font size="-1">name=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.alreadyinroom:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.alreadyinroom" value="<text.status.alreadyinroom/>" /></td>
+<td valign="top"><font size="-1">room=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.roomfull:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.roomfull" value="<text.status.roomfull/>" /></td>
+<td valign="top"><font size="-1">room=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.roomcount:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.roomcount" value="<text.status.roomcount/>" /></td>
+<td valign="top"><font size="-1">count=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.publiclimit:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.publiclimit" value="<text.status.publiclimit/>" /></td>
+<td valign="top"><font size="-1">limit=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.privatelimit:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.privatelimit" value="<text.status.privatelimit/>" /></td>
+<td valign="top"><font size="-1">limit=%0</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.noprofile:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.noprofile" value="<text.status.noprofile/>" /></td>
+<td valign="top"><font size="-1">name=%0, address=%1</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.profile:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.profile" value="<text.status.profile/>" /></td>
+<td valign="top"><font size="-1">name=%0, address=%1, profile=%2</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.status.closing:</font></td>
+<td valign="top"><input type="text" size="40" name="text.status.closing" value="<text.status.closing/>" /></td>
+<td valign="top"><font size="-1"></font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>System messages</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.system.entrance:</font></td>
+<td valign="top"><input type="text" size="40" name="text.system.entrance" value="<text.system.entrance/>" /></td>
+<td valign="top"><font size="-1">date=%0, profile=%1</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.system.audio:</font></td>
+<td valign="top"><input type="text" size="40" name="text.system.audio" value="<text.system.audio/>" /></td>
+<td valign="top"><font size="-1">date=%0, name=%1</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.system.broadcast:</font></td>
+<td valign="top"><input type="text" size="40" name="text.system.broadcast" value="<text.system.broadcast/>" /></td>
+<td valign="top"><font size="-1">date=%0, message=%1</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.system.partnerleft:</font></td>
+<td valign="top"><input type="text" size="40" name="text.system.partnerleft" value="<text.system.partnerleft/>" /></td>
+<td valign="top"><font size="-1">date=%0, name=%1</font></td>
+</tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">text.system.disconnected:</font></td>
+<td valign="top"><input type="text" size="40" name="text.system.disconnected" value="<text.system.disconnected/>" /></td>
+<td valign="top"><font size="-1">date=%0</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr><td align="right"><h3>Properties file</h3></td><td></td><td></td></tr>
+
+<tr>
+<td align="right" valign="top"><font size="-1">Save as:</font></td>
+<td valign="top"><input type="text" size="40" name="properties" value="<properties/>" /></td>
+<td valign="top"><font size="-1">file name</font></td>
+</tr>
+
+<tr><td colspan="3"><hr /></td></tr>
+<tr>
+<td>&nbsp;</td>
+<td valign="top" colspan="2">
+<input type="submit" value="Submit" />
+<input type="reset"  value="Reset" />
+</td>
+</tr>
+
+</table>
+</form>
+
+<hr />
+<span class="footer">
+Copyright &copy; 1996-2014 Status Six Communications.
+VOLANO is a registered trademark of Status Six Communications.
+</span>
+</body>
+</html>

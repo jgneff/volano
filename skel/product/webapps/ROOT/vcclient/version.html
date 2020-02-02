@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Wrong Applet Version</title>
+<link type="text/css" rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<h3>Wrong Applet Version</h3>
+
+<h4>Problem</h4>
+<p>You cannot connect to the chat server because there is a new
+version of the client chat applet available from the Web site where
+you tried to chat, but your computer is still using the old version
+of the applet. Normally, the default settings will pick up the new
+version automatically.</p>
+
+<h4>Solution</h4>
+<p>Try entering through the chat applet below:</p>
+
+<!-- Note to the chat server administrator:
+Replace the codebase attribute in the applet tag below with a new
+absolute Web address for this directory so that the new version of the
+applet will be loaded through any caching proxy servers. For example,
+if your normal codebase is a virtual directory or symbolic link like
+the following:
+
+  <applet codebase="http://www.example.com/vcclient" ...
+
+change the codebase to point to a new virtual directory or symbolic
+link with the version number included, like this:
+
+  <applet codebase="http://www.example.com/vcclient2.13.0" ...
+
+The modified codebase will force the new chat applet to be loaded
+through any caching proxy servers that might otherwise be delivering
+the old applet to your Web visitors.
+-->
+
+<applet codebase="." archive="COM/volano/VolanoChat.jar" code="COM.volano.VolanoChat.class" width="500" height="60">
+<param name="color" value="#ffffff" />
+<param name="text" value="english.txt" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<h4>If that didn't work ...</h4>
+<p>If entering through the applet on this page didn't work, you can try
+deleting the Java Plug-in temporary Internet files, thereby removing
+the old version of the applet and forcing the plug-in to load the new
+version. Open the Java Control Panel, and on the General tab under
+the section Temporary Internet Files, press the Settings... button.
+On the Temporary Files Settings window, press the Delete Files...
+button. On the Delete Temporary Files window, make sure the
+Applications and Applets item is selected with a checkmark, and press
+the OK button. Then press the OK buttons on the Temporary Internet
+Files Settings window, and then on the Java Control Panel window.
+After all that, close your Web browser, restart it, and return to
+the Web page where you are trying to chat.</p>
+
+<p>If even that didn't work, you might be trying to do one of the
+following (which will not work no matter what you do):</p>
+
+<ul>
+<li>trying to enter a personal chat room in a chat server that does
+not support hidden personal rooms, or</li>
+<li>trying to enter anonymously in a chat server that is restricted
+to members only.</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Member Applets</title>
+<link type="text/css" rel="stylesheet" href="../index.css" />
+</head>
+<body>
+
+<h2>Member Applets</h2>
+<p>[<a href="../index.html">Home</a> | <a href="http://www.volano.com/documentation.html">Administrator Guide</a>]</p>
+
+<p><b>Note:</b> These examples work only with a VOLANO Chat Pro
+Server.</p>
+
+<p>This page demonstrates the various forms of the VolanoChat member
+access applet, showing how a member can also enter the chat server as a
+monitor or administrator. For all of the member services to work, you
+must implement three CGI scripts and give their addresses to the
+VOLANO Chat Pro Server by defining the server properties
+<code>member.access</code> and <code>member.name</code> as well as the
+applet property <code>member.document</code>.</p>
+
+<h3>VolanoChat member</h3>
+<p>This is the member version of the VolanoChat applet. You can avoid
+the member name and password prompt for members already signed into your
+Web site by dynamically adding the appropriate <code>username</code> and
+<code>password</code> parameters to the applet tag. To avoid placing a
+password in the Web page source, you can instead use a temporary
+expiring token or session identifier for the password.</p>
+
+<applet codebase=".." archive="COM/volano/VolanoChat.jar" code="COM.volano.VolanoChat.class" width="500" height="120">
+<param name="member" value="true" />
+<param name="color" value="#ffffff" />
+<param name="group" value="Sample Dynamic Chat Room" />
+<param name="text" value="english.txt" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<p>The applet tag for this applet is the same as the normal VolanoChat
+applet except for the following additional parameter:</p>
+<pre>
+&lt;param name="member" value="true" /&gt;
+</pre>
+
+<h3>VolanoChat member and monitor</h3>
+<p>This is the member and monitor version of the VolanoChat applet. You
+must first set the <code>server.password</code> server property before
+you can access the server as a monitor. Monitors can remove, kick, and
+ban people in any of the chat rooms.</p>
+
+<applet codebase=".." archive="COM/volano/VolanoChat.jar" code="COM.volano.VolanoChat.class" width="500" height="125">
+<param name="member" value="true" />
+<param name="monitor" value="true" />
+<param name="color" value="#ffffff" />
+<param name="group" value="Sample Dynamic Chat Room" />
+<param name="text" value="monitor.txt" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<p>The applet tag for this applet is the same as the normal VolanoChat
+applet except for the following additional parameters:</p>
+<pre>
+&lt;param name="member"  value="true" /&gt;
+&lt;param name="monitor" value="true" /&gt;
+</pre>
+
+<h3>VolanoChat member and administrator</h3>
+<p>This is the member and administrator version of the VolanoChat
+applet. You must first set the <code>admin.password</code> server
+property before you can access the server as an administrator.
+Administrators can remove, kick, and ban people in any of the chat
+rooms. In addition, administrators can send broadcast messages into
+all of the public and personal chat rooms.</p>
+
+<applet codebase=".." archive="COM/volano/VolanoChat.jar" code="COM.volano.VolanoChat.class" width="500" height="125">
+<param name="member" value="true" />
+<param name="admin" value="true" />
+<param name="color" value="#ffffff" />
+<param name="group" value="Sample Dynamic Chat Room" />
+<param name="text" value="monitor.txt" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<p>The applet tag for this applet is the same as the normal VolanoChat
+applet except for the following additional parameters:</p>
+<pre>
+&lt;param name="member" value="true" /&gt;
+&lt;param name="admin"  value="true" /&gt;
+</pre>
+
+<hr />
+<span class="footer">
+Copyright &copy; 1996-2014 Status Six Communications.
+VOLANO is a registered trademark of Status Six Communications.
+</span>
+</body>
+</html>

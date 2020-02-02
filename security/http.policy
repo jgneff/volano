@@ -1,0 +1,19 @@
+// Minimal Java security permissions required by the VOLANO applets
+
+// For running the signed JAR files with the appletviewer.
+// Set this policy in the appletviewer with:
+//   appletviewer -J-Djava.security.policy==security/http.policy http://p490.status6.ca:8080/vcclient/index.html
+
+grant codeBase "http://p490.status6.ca:8080/vcclient/COM/volano/VolanoChat.jar" {
+    // Permissions normally granted to all applets
+    permission java.util.PropertyPermission "java.vendor", "read";
+    permission java.util.PropertyPermission "java.vendor.url", "read";
+    permission java.util.PropertyPermission "java.version", "read";
+    permission java.util.PropertyPermission "java.class.version", "read";
+    permission java.util.PropertyPermission "os.name", "read";
+    permission java.util.PropertyPermission "os.version", "read";
+    permission java.util.PropertyPermission "os.arch", "read";
+
+    // For loading the button, logo, and banner images over HTTP
+    permission java.net.URLPermission "http://p490.status6.ca:8080/vcclient/*", "*:*";
+};

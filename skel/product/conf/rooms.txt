@@ -1,0 +1,4 @@
+# VOLANO Chat Server Room List
+Sample Permanent Room A
+Sample Permanent Room B
+Sample Permanent Room C

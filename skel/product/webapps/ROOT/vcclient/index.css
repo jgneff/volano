@@ -1,0 +1,20 @@
+body {
+    font-family: "DejaVu Sans", "Bitstream Vera Sans", Verdana, sans-serif;
+    color: black;
+    background: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DejaVu Serif", "Bitstream Vera Serif", Georgia, serif;
+}
+pre, code, tt {
+    font-family: "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Andale Mono", monospace;
+}
+img {
+    border-width: 0px;
+    vertical-align: middle;
+}
+.footer {
+    font-size: smaller;
+}

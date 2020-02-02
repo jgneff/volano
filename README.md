@@ -1,0 +1,1 @@
+This repository contains the *VOLANO™ Chat Server*, a Web-based chat server somewhat popular in the late 1990s and early 2000s. The server is a standalone console application written in Java, while the clients are Java applets that run in the browser.

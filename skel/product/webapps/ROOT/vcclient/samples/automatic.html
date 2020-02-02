@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Automatic Sign-in</title>
+<link type="text/css" rel="stylesheet" href="../index.css" />
+</head>
+<body>
+
+<h2>Automatic Sign-in</h2>
+<p>[<a href="../index.html">Home</a> | <a href="http://www.volano.com/documentation.html">Administrator Guide</a>]</p>
+
+<h3>VolanoChat Applet</h3>
+<p>By adding two applet parameters, you can automate access to the
+VOLANO chat server. You can use a CGI script to build the applet tag
+dynamically, inserting member names and profiles as parameters of
+the applet. The applet below is shown with a <code>username</code>
+of "John" and a <code>profile</code> of "http://www.volano.com/".</p>
+
+<applet codebase=".." archive="COM/volano/VolanoChat.jar" code="COM.volano.VolanoChat.class" width="500" height="60">
+<param name="color" value="#ffffff" />
+<param name="group" value="Sample Dynamic Chat Room" />
+<param name="text" value="english.txt" />
+<param name="username" value="John" />
+<param name="profile" value="http://www.volano.com/" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<p>The applet tag for this applet is the same as the normal VolanoChat
+applet except for the following additional parameters:</p>
+<pre>
+&lt;param name="username" value="John" /&gt;
+&lt;param name="profile"  value="http://www.volano.com/" /&gt;
+</pre>
+
+<h3>MyVolanoChat Applet</h3>
+<p>These parameters may be used with the MyVolanoChat applet as well, as
+shown below (VOLANO Chat Pro Server only).</p>
+
+<applet codebase=".." archive="COM/volano/MyVolanoChat.jar" code="COM.volano.MyVolanoChat.class" width="500" height="60">
+<param name="color" value="#ffffff" />
+<param name="group" value="John's Personal Chat Room" />
+<param name="text" value="english.txt" />
+<param name="username" value="John" />
+<param name="profile" value="http://www.volano.com/" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<p>The applet tag for this applet is the same as the normal MyVolanoChat
+applet except for the following additional parameters:</p>
+<pre>
+&lt;param name="username" value="John" /&gt;
+&lt;param name="profile"  value="http://www.volano.com/" /&gt;
+</pre>
+
+<h3>WebVolanoChat Applet</h3>
+<p>The <code>username</code> parameter puts visitors to the
+WebVolanoChat applet directly into the chat room, as shown below:</p>
+
+<applet codebase=".." archive="COM/volano/WebVolanoChat.jar" code="COM.volano.WebVolanoChat.class" width="500" height="300">
+<param name="color" value="#ffffff" />
+<param name="group" value="Web Chat Room" />
+<param name="text" value="english.txt" />
+<param name="username" value="John" />
+<param name="profile" value="http://www.volano.com/" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<p>The applet tag for this applet is the same as the normal
+WebVolanoChat applet except for the following additional parameters:</p>
+<pre>
+&lt;param name="username" value="John" /&gt;
+&lt;param name="profile"  value="http://www.volano.com/" /&gt;
+</pre>
+
+<hr />
+<span class="footer">
+Copyright &copy; 1996-2014 Status Six Communications.
+VOLANO is a registered trademark of Status Six Communications.
+</span>
+</body>
+</html>

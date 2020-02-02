@@ -1,0 +1,18 @@
+// Sample Java security permissions for the Java 8 Plug-in sandbox
+
+// Below are the additional Java security permissions required by the
+// VOLANO chat applets when running in the Java 8 Plug-in sandbox.
+// These permissions allow the applets to connect to the chat server,
+// shown below running at www.example.com on port 8000.
+
+grant codeBase "http://www.example.com/chat/COM/volano/VolanoChat.jar" {
+    permission java.net.SocketPermission "www.example.com:8000", "connect,resolve";
+};
+
+grant codeBase "http://www.example.com/chat/COM/volano/MyVolanoChat.jar" {
+    permission java.net.SocketPermission "www.example.com:8000", "connect,resolve";
+};
+
+grant codeBase "http://www.example.com/chat/COM/volano/WebVolanoChat.jar" {
+    permission java.net.SocketPermission "www.example.com:8000", "connect,resolve";
+};

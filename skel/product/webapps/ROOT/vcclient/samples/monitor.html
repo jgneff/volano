@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Monitors and Administrators</title>
+<link type="text/css" rel="stylesheet" href="../index.css" />
+</head>
+<body>
+
+<h2>Monitors and Administrators</h2>
+<p>[<a href="../index.html">Home</a> | <a href="http://www.volano.com/documentation.html">Administrator Guide</a>]</p>
+
+<h3>Adding Passwords</h3>
+<p>When adding administrator or monitor passwords to the server
+properties file, <code>conf/properties.txt</code>, make sure the
+file is not publicly accessible through your Web server and is not
+readable by others on your server system.</p>
+<p>Only the <code>vcclient</code> subdirectory should be accessible
+through your Web server when the VOLANO chat server is installed
+following the instructions in the Administrator Guide. You can
+prevent others on the system from reading the file by modifying its
+permissions. On UNIX systems such as Linux, Solaris, FreeBSD, and Mac
+OS X, you can set its permissions by running the <code>chmod</code>
+command below from the VOLANO chat server installation directory:</p>
+<pre>
+$ chmod 600 conf/properties.txt
+</pre>
+<p>After that command, the server properties file will have the
+UNIX file permissions shown below when installed under a username
+of <code>volano</code>. This allows only the user logged in as
+<code>volano</code>, or programs (such as the VOLANO chat server)
+running under the account, to read and modify the file:</p>
+<pre>
+$ ls -l conf/properties.txt
+-rw------- 1 volano volano 4560 2009-03-04 08:22 conf/properties.txt
+</pre>
+
+<h3>VolanoChat monitor</h3>
+<p>This is the monitor version of the VolanoChat applet. You must
+first set the <code>server.password</code> server property before you
+can access the server as a monitor. Monitors can remove, kick, and ban
+people in any of the chat rooms.</p>
+
+<applet codebase=".." archive="COM/volano/VolanoChat.jar" code="COM.volano.VolanoChat.class" width="500" height="60">
+<param name="monitor" value="true" />
+<param name="color" value="#ffffff" />
+<param name="group" value="Sample Dynamic Chat Room" />
+<param name="text" value="monitor.txt" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<p>The applet tag for this applet is the same as the normal VolanoChat
+applet except for the following additional parameter:</p>
+<pre>
+&lt;param name="monitor" value="true" /&gt;
+</pre>
+
+<h3>VolanoChat administrator</h3>
+<p>This is the administrator version of the VolanoChat applet. You must
+first set the <code>admin.password</code> server property before you can
+access the server as an administrator. Administrators can remove, kick,
+and ban people in any of the chat rooms. In addition, administrators can
+send broadcast messages into all of the public and personal chat
+rooms.</p>
+
+<applet codebase=".." archive="COM/volano/VolanoChat.jar" code="COM.volano.VolanoChat.class" width="500" height="60">
+<param name="admin" value="true" />
+<param name="color" value="#ffffff" />
+<param name="group" value="Sample Dynamic Chat Room" />
+<param name="text" value="monitor.txt" />
+<code>[Enable Java to see the applet here.]</code>
+</applet>
+
+<p>The applet tag for this applet is the same as the normal VolanoChat
+applet except for the following additional parameter:</p>
+<pre>
+&lt;param name="admin" value="true" /&gt;
+</pre>
+
+<hr />
+<span class="footer">
+Copyright &copy; 1996-2014 Status Six Communications.
+VOLANO is a registered trademark of Status Six Communications.
+</span>
+</body>
+</html>

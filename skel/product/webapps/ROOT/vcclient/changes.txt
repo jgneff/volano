@@ -1,0 +1,301 @@
+# Changes from VolanoChat 2.10 to 2.11
+# ------------------------------------
+
+# Properties modified:
+key.ignore.ctrl=V
+key.ignore.meta=V
+key.ignore.shift=\u009b
+
+# Changes from VolanoChat 2.9 to 2.10
+# -----------------------------------
+
+# Properties added:
+textarea.swing.force=false
+char.replace.nonprintable=false
+
+# Changes from VolanoChat 2.7 to 2.8
+# ----------------------------------
+
+# Properties modified:
+unconfirmed.chat=1
+
+# Changes from VolanoChat 2.6.3 to 2.6.4
+# --------------------------------------
+
+# Properties added:
+label.url=
+label.url.text=
+label.url.link=
+
+# Changes from VolanoChat 2.6.2 to 2.6.3
+# --------------------------------------
+
+# Properties modified:
+delay.beep=1000
+delay.chat=1000
+delay.enter.private=1000
+delay.enter.room=1000
+text.system.entrance=[%0] %2 %1: %3
+
+# Changes from VolanoChat 2.5 to 2.6
+# ----------------------------------
+
+# Properties modified:
+text.menu.links.names=Java - Get It Now!
+text.menu.links.locations=http://www.java.com/
+text.main.title=VolanoChat Applet
+
+# Changes from VolanoChat 2.5.0 to 2.5.1
+# --------------------------------------
+
+# Properties added:
+filter.enable=false
+send.private.disable=false
+
+# Changes from VolanoChat 2.1.10 to 2.5.0
+# ---------------------------------------
+
+# The new mandatory header for the file is:
+#VolanoChat Applet Properties - do not move or modify this line.
+
+# Properties added:
+accept.private.default=true
+color.background.button=#FFFFCC
+color.background.list=#DCDCDC
+color.background.text.editable=#FFFFFF
+color.background.text=#DCDCDC
+color.foreground.button=#000000
+color.foreground.list=#000000
+color.foreground.text.editable.inactive=#FF0000
+color.foreground.text.editable=#000000
+color.foreground.text.link=#0000FF
+color.foreground.text=#000000
+delay.access=0
+delay.authenticate=0
+delay.beep=5000
+delay.chat=5000
+delay.enter.private=5000
+delay.enter.room=5000
+delay.exit.private=0
+delay.exit.room=0
+delay.keystroke=0
+delay.kick=0
+delay.ping=0
+delay.room.list=0
+delay.user.list=0
+label.link=
+label.text=
+link.prefix=http:// ftp:// news: mailto:
+link.profile.disable=false
+link.profile.url=%0
+link.referrer.disable=false
+link.referrer.url=%0
+page.access.duplicate=duplicate.html
+page.java.version=java.html
+recent.user.limit=50
+text.button.authenticating=Access granted, authenticating client...
+text.main.filter=Room filter:
+text.main.getrooms=Get Rooms
+text.menu.accept.private=Accept Private Chats
+text.menu.getrooms=Get Rooms
+text.menu.monitor.ban=
+text.menu.monitor.kick=
+text.menu.monitor.remove=
+text.menu.monitor=Monitor
+text.menu.themes.default=Standard
+text.menu.themes.names=Plum | Desert | Marine | Pumpkin | Lime | - | High Contrast Black | High Contrast Black (large) | High Contrast White | High Contrast White (large)
+text.menu.themes.title=Themes
+text.monitor.cancel=Cancel
+text.monitor.label.ban=Select the address to ban:
+text.monitor.label.kick=Select the address to disconnect:
+text.monitor.label.remove=Select the name to remove:
+text.monitor.okay=OK
+text.monitor.title.ban=Ban From Server
+text.monitor.title.kick=Kick From Server
+text.monitor.title.remove=Remove From Room
+text.status.focus.filter=Filter for list of room names.
+text.status.focus.getrooms=Get list of room names matching filter.
+theme.1.color.background.button=#EEEEEE
+theme.1.color.background.list=#FFCCFF
+theme.1.color.background.text=#FFCCFF
+theme.1.color.background=#CC99CC
+theme.1.color.foreground.text.editable.inactive=#996699
+theme.1.color.foreground.text.link=#330033
+theme.10.color.background.button=#FFFFFF
+theme.10.color.background.list=#FFFFFF
+theme.10.color.background.text=#FFFFFF
+theme.10.color.background=#FFFFFF
+theme.10.color.foreground.text.editable.inactive=#808080
+theme.10.font.default=SansSerif-18
+theme.2.color.background.button=#FFFFCC
+theme.2.color.background.list=#EDEDCA
+theme.2.color.background.text=#EDEDCA
+theme.2.color.background=#CCCC99
+theme.2.color.foreground.text.editable.inactive=#999966
+theme.2.color.foreground.text.link=#333300
+theme.3.color.background.button=#EEEEEE
+theme.3.color.background.list=#B6CBEB
+theme.3.color.background.text=#B6CBEB
+theme.3.color.background=#6699CC
+theme.3.color.foreground.text.editable.inactive=#336699
+theme.3.color.foreground.text.link=#000033
+theme.4.color.background.button=#FFFFCC
+theme.4.color.background.list=#FFCC99
+theme.4.color.background.text=#FFCC99
+theme.4.color.background=#FF9966
+theme.4.color.foreground.text.editable.inactive=#CC6633
+theme.4.color.foreground.text.link=#660000
+theme.5.color.background.button=#C8ECD4
+theme.5.color.background.list=#C8ECD4
+theme.5.color.background.text=#C8ECD4
+theme.5.color.background=#83D8A4
+theme.5.color.foreground.text.editable.inactive=#53A874
+theme.5.color.foreground.text.link=#004814
+theme.7.color.background.button=#000000
+theme.7.color.background.list=#000000
+theme.7.color.background.text.editable=#000000
+theme.7.color.background.text=#000000
+theme.7.color.background=#000000
+theme.7.color.foreground.button=#FFFFFF
+theme.7.color.foreground.list=#FFFFFF
+theme.7.color.foreground.text.editable.inactive=#808080
+theme.7.color.foreground.text.editable=#FFFFFF
+theme.7.color.foreground.text.link=#8080FF
+theme.7.color.foreground.text=#FFFFFF
+theme.7.color.foreground=#FFFFFF
+theme.8.color.background.button=#000000
+theme.8.color.background.list=#000000
+theme.8.color.background.text.editable=#000000
+theme.8.color.background.text=#000000
+theme.8.color.background=#000000
+theme.8.color.foreground.button=#FFFFFF
+theme.8.color.foreground.list=#FFFFFF
+theme.8.color.foreground.text.editable.inactive=#808080
+theme.8.color.foreground.text.editable=#FFFFFF
+theme.8.color.foreground.text.link=#8080FF
+theme.8.color.foreground.text=#FFFFFF
+theme.8.color.foreground=#FFFFFF
+theme.8.font.default=SansSerif-18
+theme.9.color.background.button=#FFFFFF
+theme.9.color.background.list=#FFFFFF
+theme.9.color.background.text=#FFFFFF
+theme.9.color.background=#FFFFFF
+theme.9.color.foreground.text.editable.inactive=#808080
+unconfirmed.chat=0
+
+# Properties deleted:
+text.main.refresh=Refresh Rooms
+text.main.roomname=Room name:
+text.menu.people.ban=Ban %0
+text.menu.people.kick=Kick %0
+text.menu.people.remove=Remove %0
+text.menu.refresh=Refresh Rooms
+text.status.focus.refresh=Refresh the list of rooms.
+text.status.focus.roomname=Your room selection.
+
+# Properties modified:
+banner.height=60
+color.background=#A0B8C8
+font.default=SansSerif-13
+length.chattext=200
+length.profile=200
+limit.public=5
+logo.height=220
+text.main.title=VolanoChat 2.5
+text.menu.links.locations=http://www.webstandards.org/upgrade/ | http://java.sun.com/getjava/
+text.menu.links.names=Browser Upgrades | Get Java
+text.menu.links.title=Links
+text.status.enter=Press Enter Room to enter %0.
+text.status.entername=Enter a name to join %0.
+text.status.noprofile=%1 %0 has no profile.
+text.status.nosuchroom=Room no longer exists. Press Get Rooms.
+text.status.privatelimit=You are limited to %0 private chat sessions.
+text.status.profile=%1 %0: %2
+text.status.publiclimit=You are limited to %0 chat rooms.
+text.status.selectroom=Select a room to enter.
+
+# Changes from VolanoChat 2.1.9 to 2.1.10
+# ---------------------------------------
+
+# Properties deleted:
+text.menu.people.identify=Identify %0
+text.status.identify=%0: %1
+
+# Properties modified:
+# text.status.noprofile=[%1] %0 has no profile.
+# text.status.profile=[%1] %0: %2
+
+# Changes from VolanoChat 2.1.8 to 2.1.9
+# --------------------------------------
+
+# Properties added:
+page.exit.error=
+
+# Changes from VolanoChat 2.1.7 to 2.1.8
+# --------------------------------------
+
+# Properties added:
+member.monitor=false
+text.menu.people.identify=Identify %0
+text.status.identify=%0: %1
+
+# Properties modified:
+char.replace.old=\u000a\u000d\u00a0
+char.replace.new=\u0020\u0020\u0020
+
+# Changes from VolanoChat 2.1.4 to 2.1.5
+# --------------------------------------
+
+# Properties added:
+key.ignore.alt=
+key.ignore.ctrl=\u0016
+key.ignore.meta=\u0076
+key.ignore.shift=\u0401
+char.replace.old=\u000a\u000d
+char.replace.new=\u0020\u0020
+
+# Changes from VolanoChat 2.1.3 to 2.1.4
+# --------------------------------------
+
+# Properties added:
+page.newwindow=false
+
+# Changes from VolanoChat 2.1.2 to 2.1.3
+# --------------------------------------
+
+# Properties added:
+webtouring.default=false
+logo.code=COM.volano.BannerPlayer.class
+logo.parameters=LogoPlayer.txt
+logo.width=100
+logo.height=200
+page.exit=
+text.menu.webtouring=Web Touring
+text.menu.links.title=
+text.menu.links.names=
+text.menu.links.locations=
+
+# Changes from VolanoChat 2.0 to 2.1
+# ----------------------------------
+
+# Properties deleted:
+banner.fill=true
+
+# Properties modified:
+banner.height=76
+text.main.title=VolanoChat 2.1
+
+# Properties added:
+alert.count.default=false
+image.button.border=true
+page.use.document.base=false
+page.about=about.html
+text.main.onstage=On stage:
+text.main.connect=Connect
+text.main.disconnect=Disconnect
+text.chat.event.status=Type your question and press Enter to send it.
+text.chat.event.sent=Your question has been submitted to the moderator.
+text.menu.alert.count=Show Count Changes
+text.menu.people.count=Count
+text.status.enterprofile=Enter an optional profile.
+text.status.roomcount=Room count = %0.

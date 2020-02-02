@@ -1,0 +1,154 @@
+# VOLANO Chat Server Properties
+
+# Applet code base directory
+
+applet.codebase=webapps/ROOT/vcclient
+
+# General properties
+
+server.host=
+server.port=8000
+server.password=
+client.authentication=true
+duplicate.addresses=true
+admin.client.host=127.0.0.1
+admin.port=8001
+admin.password=
+status.interval=60
+server.backlog=50
+server.limit=0
+server.timeout=10
+server.verbose=false
+server.trace=false
+address.broadcast=false
+script.timeout=10
+script.trace=false
+room.limit=25
+room.nodynamic=false
+room.sweep.interval=15
+username.matchcase=true
+length.chattext=200
+length.profile=200
+length.roomname=100
+length.username=20
+
+# Servlet container
+
+servlet.port=8080
+servlet.minprocessors=5
+servlet.maxprocessors=20
+
+# Flood control
+
+delay.access=0
+delay.authenticate=0
+delay.beep=1000
+delay.chat=1000
+delay.enter.private=1000
+delay.enter.room=1000
+delay.exit.private=0
+delay.exit.room=0
+delay.kick=0
+delay.ping=0
+delay.room.list=0
+delay.user.list=0
+
+# Banning control
+
+dnslist.denied=
+dnslist.dynamic=
+ban.static.duration=1440
+ban.dynamic.duration=60
+ban.netblock.duration=60
+ban.netblock.ipv4mask=255.255.0.0
+
+# Configuration files
+
+server.key=conf/key.txt
+server.rooms=conf/rooms.txt
+access.hosts.allow=conf/hosts-allow.txt
+access.hosts.deny=conf/hosts-deny.txt
+access.referrers.allow=conf/referrers-allow.txt
+access.referrers.deny=conf/referrers-deny.txt
+
+# Log files
+
+log.directory=logs
+log.access.prefix=access-
+log.access.suffix=.log
+log.error.prefix=error-
+log.error.suffix=.log
+log.public.prefix=
+log.public.suffix=.log
+log.private.prefix=
+log.private.suffix=.log
+log.banned.prefix=banned-
+log.banned.suffix=.log
+log.servlet.prefix=servlet-
+log.servlet.suffix=.log
+log.http.prefix=http-
+log.http.suffix=.log
+log.velocity.prefix=velocity-
+log.velocity.suffix=.log
+
+log.support=logs/support.log
+log.chat.public.dir=webapps/ROOT
+log.chat.public.suffix=.html
+log.chat.private=
+
+# Room transcriptions
+
+transcribe.room.permanent=false
+transcribe.room.dynamic=false
+transcribe.room.event=false
+transcribe.room.private=false
+
+# Log file formats
+
+# format.access:           {0} Remote host, {1} Date, {2} Codebase, {3} Version, {4} Status, {5} Bytes, {6} Referrer, {7} Agent, {8} Extra, {9} Member
+# format.access.agent:     {0} Java vendor, {1} Java version, {2} Java class version, {3} OS name, {4} OS version, {5} OS architecture, {6} Vendor URL
+# format.access.extra:     {0} Duration in seconds, {1} Referrer host, {2} Applet host, {3} Connections, {4} Public rooms, {5} Private rooms, {6} Monitor host
+# format.public:           {0} Date, {1} Duration in seconds, {2} Room name, {3} User name, {4} User host
+# format.private:          {0} Date, {1} Duration in seconds, {2} Room name, {3} User1 name, {4} User1 host, {5} User2 name, {6} User2 host
+# format.banned:           {0} Date, {1} Host address, {2} Address type, {3} Room name, {4} User name, {5} Monitor name
+# format.status:           {0} Date, {1} Memory, {2} Resources, {3} Public rooms, {4} Personal rooms, {5} Private rooms, {6} Received, {7} Sent, {8} Total
+# format.status.memory:    {0} Kilobytes used, {1} Kilobytes available, {2} Percentage used
+# format.status.resources: {0} Threads, {2} Connections, {3} Unique hosts
+# format.chat.public:      {0} From name, {1} To name, {2} Message, {3} Date
+# format.chat.private:     {0} From name, {1} To name, {2} Message, {3} Date
+
+format.date=[dd/MMM/yyyy:HH:mm:ss z]
+format.access={0} - {9} {1} "GET {2} HTTP/{3}" {4,number,0} {5,number,0} "{6}" "{7}" {8}
+format.access.agent={0}/{1} API/{2} ({3}/{4} {5}) {6}
+format.access.extra={0,number,0} {6}
+format.public={0} {1,number,0} "{2}" "{3}" {4}
+format.private={0} {1,number,0} "{2}" "{3}" {4} "{5}" {6}
+format.banned={1}\={2,choice,0\#Static|1\#Dynamic|2\#Netblock} address banned at {0} as {4} in {3} by {5}
+format.status={0} {1} {2} {3,number,0} {4,number,0} {5,number,0} {6,number,0} {7,number,0} {8,number,0}
+format.status.memory={0,number,0}KB/{1,number,0}KB {2,number,0%}
+format.status.resources={0,number,0} {1,number,0} ({2,number,0})
+format.chat.public={3,date,[dd/MMM/yyyy:HH:mm:ss]} <b>&lt;{0}&gt;</b> {2}<br>
+format.chat.private={3,date,[dd/MMM/yyyy:HH:mm:ss]} <b>&lt;{0} -&gt; {1}&gt;</b> {2}<br>
+
+# Member access
+
+# member.access: {0} Member name, {1} Member password
+# member.name:   {0} Member name
+
+member.version=
+member.only=false
+member.access=
+member.name=
+
+member.monitor.matchcase=false
+member.monitor.multiuse=false
+member.monitors=
+
+# Auditorium access and creation
+
+auditoriums.permanent=false
+entrance.stage=
+
+# Access to server events
+
+event.callback.prefix=
