@@ -2,6 +2,30 @@ This repository contains the source code of the *VOLANO™* chat server, a forme
 
 The *VOLANO* chat server is a cross-platform console application written in Java with clients that run in the Web browser as Java applets. I wrote the initial release in 1996 and licensed the software to customers in 50 countries over the following years. Customers used the *VOLANO* chat server to provide chat rooms for visitors to their Web sites.
 
+### Screenshots
+
+The client side runs using the *appletviewer* command available in versions of the Java Development Kit prior to version 11. The main applet window shows a list of chat rooms.
+
+![VolanoChat applet main window](images/volano-applet-main.png)
+
+The *Enter Room* button opens another window for sending and receiving messages in the chat room. At the top of the window is a banner area which can be either a static image or another interactive Java applet embedded in this one.
+
+![VolanoChat applet chat window](images/volano-applet-chat.png)
+
+The server side runs as a simple console application or as an automatic background service.
+
+```console
+john@ubuntu:~/opt/volano-2.13$ ./startup.sh
+openjdk version "1.8.0_242"
+OpenJDK Runtime Environment (build 1.8.0_242-8u242-b08-0ubuntu3~16.04-b08)
+OpenJDK 64-Bit Server VM (build 25.242-b08, mixed mode)
+VOLANO(TM) Chat Server Version 2.13.4
+Copyright (C) 1996-2015 John Neffenger
+Loading server properties from "/home/john/opt/volano-2.13/conf/properties.txt".
+ubuntu:8000 (192.168.1.2:8000) VolanoChatPro - unlimited connections.
+Apache Tomcat/4.1.40
+```
+
 ### Goals
 
 My goals for this project are to update the software as follows:
